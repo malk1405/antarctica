@@ -1,0 +1,159 @@
+.footer {
+  background-color: #030a1a;
+  margin-top: auto;
+
+  &-container {
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 14px;
+    padding: 42px 0;
+    position: relative;
+
+    @media screen and (max-width: 1365px) {
+      padding: 45px 0;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      padding-bottom: 50px;
+      padding-top: 40px;
+    }
+
+    &__section {
+      width: 15%;
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+
+      &--central {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  &__links {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      height: 120px;
+      justify-content: flex-start;
+      width: 100%;
+    }
+  }
+
+  &__link {
+    border-radius: 3px;
+    line-height: 1.5;
+    margin: 0 20px;
+
+    a:hover {
+      display: block;
+      text-decoration: underline;
+      transform: scale(1.2);
+      transform-origin: left;
+    }
+
+    @media screen and (max-width: 1365px) {
+      margin: 0 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      line-height: 2.4;
+      margin: 0;
+      width: 10em;
+    }
+
+    &--logo {
+      margin: 0;
+      left: 0;
+      order: -1;
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+
+      @media screen and (max-width: 767px) {
+        position: static;
+        transform: none;
+      }
+
+      .logo {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &__social {
+    &-links {
+      align-items: center;
+      justify-content: flex-end;
+      display: flex;
+
+      @media screen and (max-width: 767px) {
+        margin-top: 22px;
+        justify-content: flex-start;
+      }
+    }
+
+    &-link {
+      &:hover {
+        transform: scale(1.3);
+      }
+
+      & + & {
+        margin-left: 25px;
+
+        @media screen and (max-width: 1365px) {
+          margin-left: 20px;
+        }
+
+        @media screen and (max-width: 767px) {
+          margin-left: 35px;
+        }
+      }
+
+      .sprite {
+        background-position: -61px -39px;
+        height: 24px;
+        width: 24px;
+
+        @media screen and (max-width: 767px) {
+          background-position: -5px -42px;
+          height: 27px;
+          width: 27px;
+        }
+      }
+
+      &--fb {
+        width: 12px;
+
+        @media screen and (max-width: 767px) {
+          width: 14px;
+        }
+      }
+
+      &--vk {
+        height: 13px;
+        width: 24px;
+
+        @media screen and (max-width: 767px) {
+          height: 17px;
+          width: 32px;
+        }
+      }
+
+      & a,
+      & img {
+        display: block;
+        height: 100%;
+      }
+    }
+  }
+}

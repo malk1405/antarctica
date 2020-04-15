@@ -1,0 +1,32 @@
+.sprite {
+  position: relative;
+
+  &__svg {
+    display: none;
+
+    &--lg {
+      display: block;
+    }
+
+    @media screen and (max-width: 1365px) {
+      display: none;
+
+      &--md {
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+
+      &--sm {
+        display: block;
+      }
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+  }
+}

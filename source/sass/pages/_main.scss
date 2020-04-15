@@ -1,0 +1,1573 @@
+.fitness {
+  color: white;
+  margin-top: -37px;
+  padding-bottom: 51px;
+
+  @media screen and (max-width: 1365px) {
+    margin-top: -23px;
+    padding-bottom: 82px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+  }
+}
+
+.fitness-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.fitness__info {
+  flex-basis: 350px;
+  padding-top: 113px;
+  position: relative;
+  text-align: right;
+
+  @media screen and (max-width: 1365px) {
+    flex-basis: 280px;
+    padding-top: 51px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex: 100%;
+    padding-top: 29px;
+  }
+}
+
+.fitness__city {
+  font-family: "BebasNeue", Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-size: 49px;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1365px) {
+    font-size: 34px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+  }
+}
+
+.fitness__title {
+  font-family: "BebasNeue", Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-size: 112px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  margin-top: 7px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1365px) {
+    font-size: 88px;
+    margin-top: 1px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 81px;
+    margin-top: 6px;
+  }
+}
+
+.fitness__activities {
+  font-size: 14px;
+  line-height: 1.5;
+  position: absolute;
+  right: 264px;
+  top: 305px;
+  width: 120px;
+
+  @media screen and (max-width: 1365px) {
+    right: 211px;
+    top: 187px;
+  }
+
+  @media screen and (max-width: 767px) {
+    right: 178px;
+    top: 151px;
+  }
+}
+
+.fitness__buy {
+  border: 5px solid white;
+  color: white;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 53px;
+  margin-left: auto;
+  margin-top: 52px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 232px;
+
+  @media screen and (max-width: 1365px) {
+    margin-top: 39px;
+    width: 185px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: white;
+    color: $primary;
+  }
+}
+
+.fitness__banner {
+  height: 556px;
+  margin-right: 200px;
+  margin-left: 64px;
+  width: 500px;
+
+  @media screen and (max-width: 1365px) {
+    background-position: 45%;
+    height: 390px;
+    margin-right: 0;
+    margin-left: 30px;
+    width: 324px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.fitness__social {
+  bottom: 42px;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  text-align: end;
+  & li {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 1365px) {
+    display: none;
+  }
+
+  a:hover {
+    display: block;
+    text-decoration: underline;
+    transform: scale(1.5);
+  }
+}
+
+.section {
+  margin-top: 120px;
+
+  @media screen and (max-width: 1365px) {
+    margin-top: 100px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 70px;
+  }
+}
+
+.gym > .container {
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.gym-wrapper {
+  display: flex;
+
+  @media screen and (max-width: 1365px) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.gym__info {
+  line-height: 1.5;
+  margin: 47px 85px 0 auto;
+  max-width: 355px;
+
+  @media screen and (max-width: 1365px) {
+    margin: 0;
+    min-width: 502px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    min-width: 290px;
+    max-width: 290px;
+    text-align: left;
+  }
+}
+
+.gym__square {
+  font-size: 18px;
+  margin-top: 8px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 5px;
+  }
+}
+
+.gym__description {
+  margin-bottom: 42px;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 300;
+
+  & p:not(:first-child) {
+    margin-top: 7px;
+  }
+
+  @media screen and (max-width: 1365px) {
+    margin-top: 35px;
+
+    & p:not(:first-child) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+    margin-top: 25px;
+    width: 258px;
+  }
+}
+
+.gym__photo {
+  height: 401px;
+  width: 660px;
+
+  @media screen and (max-width: 1365px) {
+    height: 376px;
+    width: 678px;
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 313px;
+    width: 320px;
+  }
+}
+
+.gym__video {
+  background-color: #eee;
+  height: 228px;
+  margin-left: -63px;
+  margin-top: -113px;
+  position: relative;
+  width: 364px;
+
+  @media screen and (max-width: 1365px) {
+    height: 167px;
+    margin: -115px auto 0;
+    width: 266px;
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 167px;
+    margin: 40px 0;
+    width: 320px;
+  }
+
+  & video {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  &-button {
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    height: 100px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+
+    &:hover {
+      cursor: pointer;
+      svg {
+        transform: scale(1.1);
+      }
+    }
+
+    @media screen and (max-width: 1365px) {
+      transform: translate(-50%, -50%) scale(0.73);
+    }
+  }
+}
+
+.abonement {
+  background-color: #f8f9fc;
+
+  position: relative;
+
+  &::after {
+    background: url("../img/abonements-disks-lg.png");
+    bottom: -150px;
+    content: "";
+    display: block;
+    height: 494px;
+    position: absolute;
+    right: 0;
+    width: 287px;
+
+    @media screen and (max-width: 1365px) {
+      background: url("../img/abonements-disks-md.png");
+      bottom: -125px;
+      height: 444px;
+      width: 347px;
+    }
+
+    @media screen and (max-width: 767px) {
+      background: none;
+      display: none;
+    }
+  }
+}
+
+.abonement-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 120px 0;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  @media screen and (max-width: 1365px) {
+    padding: 100px 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 70px 0;
+  }
+}
+
+.abonement__months {
+  border-bottom: 2px solid #78787833;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  line-height: 1.5;
+  margin-top: 33px;
+  width: 341px;
+
+  @media screen and (max-width: 1365px) {
+    font-size: 18px;
+    margin-top: 29px;
+    width: 332px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+    margin-top: 21px;
+    width: 100%;
+  }
+}
+
+.abonement__month {
+  flex-shrink: 0;
+  padding-bottom: 11px;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 12px;
+  }
+
+  & > label {
+    opacity: 0.5;
+    position: relative;
+    padding-right: 2px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+
+    &::after {
+      background-color: #d10a42;
+      bottom: -16px;
+      content: "";
+      display: none;
+      height: 2px;
+      position: absolute;
+      width: 100%;
+
+      @media screen and (max-width: 767px) {
+        bottom: -17px;
+      }
+    }
+  }
+
+  & > input {
+    display: none;
+
+    &:checked + label {
+      opacity: 1;
+
+      &::after {
+        display: block;
+      }
+    }
+  }
+}
+
+.abonement__plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+
+  @media screen and (max-width: 1365px) {
+    flex-direction: column;
+    width: 442px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.abonement__plan {
+  background-color: white;
+  height: 448px;
+  margin-top: 38px;
+  padding: 7px;
+  text-align: center;
+  width: 360px;
+
+  &:hover {
+    background: linear-gradient(135deg, #ed0233 17.6%, #003eb7 95.31%);
+  }
+
+  @media screen and (max-width: 1365px) {
+    margin-top: 44px;
+    width: 100%;
+
+    & + & {
+      margin-top: 40px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 384px;
+    margin-top: 34px;
+
+    & + & {
+      margin-top: 35px;
+    }
+  }
+}
+
+.plan-wrapper {
+  background-color: white;
+  padding: 61px 69px;
+
+  @media screen and (max-width: 1365px) {
+    padding-left: 111px;
+    padding-right: 111px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 48px 35px;
+  }
+}
+
+.plan__title {
+  font-size: 26px;
+  margin-top: -7px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 22px;
+  }
+}
+
+.plan__time {
+  font-size: 16px;
+  margin-top: 13px;
+}
+
+.plan__price {
+  font-size: 60px;
+  margin-top: 79px;
+  position: relative;
+
+  &::before {
+    bottom: 0px;
+    content: attr(data-value);
+    color: #f5f5f5;
+    display: block;
+    font-size: 100px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+
+  & > span {
+    position: relative;
+    z-index: 2;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 48px;
+    margin-top: 66px;
+    & > span {
+      padding-left: 7px;
+    }
+
+    &::before {
+      font-size: 80px;
+    }
+  }
+}
+
+.plan__price-value {
+  color: #103aae;
+  font-weight: bold;
+}
+
+.plan__buy {
+  background-clip: border-box;
+  border: $primary 2px solid;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 61px;
+  margin-top: 45px;
+  text-transform: uppercase;
+  width: 100%;
+
+  &:hover {
+    background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+    background-position: cover;
+    background-repeat: no-repeat;
+    border-color: transparent;
+    color: white;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 38px;
+  }
+}
+
+// секция промо
+
+.promo-wrapper {
+  display: flex;
+  font-size: 18px;
+
+  position: relative;
+  width: 100%;
+
+  @media screen and (max-width: 1365px) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.promo__info {
+  background-color: #ed0233;
+  color: white;
+  display: flex;
+
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 85px 77px;
+
+  @media screen and (max-width: 1365px) {
+    padding: 50px 44px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 50px 43px;
+  }
+}
+
+.promo__top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1px;
+  padding: 0 1px;
+}
+
+.promo__title {
+  font-family: "BebasNeue", Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-size: 90px;
+  flex-basis: 60%;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1365px) {
+    font-size: 52px;
+  }
+}
+
+.promo__event {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.event__container {
+  & + & {
+    margin-top: 20px;
+
+    @media screen and (max-width: 1365px) {
+      margin-top: 8px;
+    }
+  }
+}
+
+.event__description {
+  border-bottom: 1px solid white;
+  padding-bottom: 8px;
+
+  @media screen and (max-width: 1365px) {
+    padding-bottom: 3px;
+  }
+}
+
+.event__date {
+  display: flex;
+}
+
+.event__month {
+  align-self: center;
+  font-size: 14px;
+  margin-left: 5px;
+
+  @media screen and (max-width: 1365px) {
+    font-size: 10px;
+  }
+}
+.event__time,
+.event__day {
+  font-size: 40px;
+  font-weight: bold;
+
+  @media screen and (max-width: 1365px) {
+    font-size: 24px;
+  }
+}
+
+.promo__description {
+  margin-top: 11px;
+
+  @media screen and (max-width: 1365px) {
+    margin-top: 3px;
+  }
+}
+
+.promo__enroll {
+  border: 4px solid white;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 63px;
+  margin-top: auto;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: white;
+    color: #ed0233;
+  }
+
+  @media screen and (max-width: 1365px) {
+    border-width: 3px;
+    font-size: 10px;
+    line-height: 35px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+    line-height: 37px;
+  }
+}
+
+.promo__image {
+  flex-shrink: 0;
+  height: 500px;
+  width: 660px;
+  background-color: #040449;
+  background-image: url("../img/promo-lg.jpg");
+
+  @media screen and (max-width: 1365px) {
+    background-image: url("../img/promo-md.jpg");
+    height: 292px;
+    width: 386px;
+  }
+
+  @media screen and (max-width: 767px) {
+    background-image: url("../img/promo-sm.jpg");
+    width: 290px;
+  }
+}
+// секция промо. Конец
+
+// секция тренеры
+.trainers {
+  &__header {
+    @media screen and (max-width: 1365px) {
+      text-align: center;
+    }
+  }
+
+  &__slider {
+    height: 294px;
+    margin-top: 50px;
+
+    @media screen and (max-width: 1365px) {
+      margin-top: 40px;
+    }
+
+    @media screen and (max-width: 767px) {
+      height: 274px;
+      margin-top: 42px;
+    }
+  }
+
+  $textColor: white;
+  &__card {
+    color: $textColor;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: flex-end;
+    margin-left: 0;
+    margin-right: 40px;
+    padding-bottom: 26px;
+    position: relative;
+    text-align: center;
+    transition: margin 300ms ease-in;
+    width: 260px;
+
+    @media screen and (max-width: 1365px) {
+      margin-right: 30px;
+      width: 268px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-right: 20px;
+      width: 226px;
+    }
+
+    &:hover {
+      background-color: rgba(16, 38, 84, 0.89);
+      justify-content: flex-start;
+
+      .trainers-card__info {
+        opacity: 1;
+        height: auto;
+      }
+    }
+
+    &--hidden {
+      margin-left: -300px;
+
+      @media screen and (max-width: 1365px) {
+        margin-left: -298px;
+      }
+
+      @media screen and (max-width: 767px) {
+        margin-left: -246px;
+      }
+    }
+  }
+
+  &-card {
+    &__name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 55px;
+
+      @media screen and (max-width: 767px) {
+        margin-top: 45px;
+      }
+    }
+
+    &__info {
+      opacity: 0;
+      height: 0;
+    }
+
+    &__spec {
+      color: #b6bdcc;
+      font-size: 16px;
+      margin-top: 3px;
+    }
+
+    &__achievements {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-left: 50px;
+      margin-top: 36px;
+      padding: 0 21px;
+      text-align: start;
+
+      @media screen and (max-width: 767px) {
+        padding: 0;
+      }
+
+      li {
+        margin-top: 13px;
+        position: relative;
+
+        &::before {
+          background-color: $textColor;
+          border-radius: 50%;
+          content: "";
+          display: block;
+          height: 6px;
+          left: -16px;
+          position: absolute;
+          top: 7px;
+          width: 6px;
+        }
+      }
+    }
+
+    &__photo {
+      background-color: $primary;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      text-align: start;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}
+// секция тренеры. Конец
+
+// секция преимущества
+.advantages {
+  background-color: #f8f9fc;
+  padding: 120px 0;
+  text-align: center;
+
+  @media screen and (max-width: 1365px) {
+    padding: 100px 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 70px 0;
+  }
+
+  &-features {
+    display: flex;
+    flex-direction: column;
+    height: 307px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 68px;
+    position: relative;
+    width: 1040px;
+
+    &::before,
+    &::after {
+      background-color: rgba(209, 10, 66, 0.2);
+      content: "";
+      display: block;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 340px;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    @media screen and (max-width: 1365px) {
+      height: auto;
+      margin-top: 42px;
+      max-width: 768px;
+      width: 100%;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      margin: -11px 0 -3px;
+      position: absolute;
+      width: 100%;
+
+      &:last-child {
+        bottom: 0;
+      }
+
+      @media screen and (max-width: 1365px) {
+        margin: 0;
+        padding: 0 45px;
+        position: static;
+      }
+
+      @media screen and (max-width: 767px) {
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
+
+  &-feature {
+    display: flex;
+    text-align: left;
+    width: 340px;
+
+    @media screen and (max-width: 1365px) {
+      width: 48%;
+    }
+
+    @media screen and (max-width: 767px) {
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      width: 227px;
+    }
+
+    &--main {
+      background-color: #1c3374;
+      color: white;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+      padding: 59px 34px;
+      position: absolute;
+      text-align: center;
+      transform: translateX(-50%);
+      top: 0;
+      left: 50%;
+      width: 240px;
+
+      @media screen and (max-width: 1365px) {
+        height: 239px;
+        margin: 44px auto;
+        padding: 38px 130px;
+        position: static;
+        transform: none;
+        width: 442px;
+      }
+
+      @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+        padding: 42px 130px;
+        width: 100%;
+      }
+    }
+
+    &--left {
+      padding-left: 20px;
+
+      @media screen and (max-width: 1365px) {
+        padding-left: 0;
+      }
+
+      @media screen and (max-width: 767px) {
+        margin-bottom: 32px;
+      }
+    }
+
+    &__info {
+      line-height: 1.5;
+      margin-bottom: -2px;
+      margin-left: 29px;
+      order: 1;
+      position: relative;
+      top: 4px;
+
+      @media screen and (max-width: 1365px) {
+        top: 0;
+      }
+
+      @media screen and (max-width: 767px) {
+        margin: 0;
+        margin-top: 10px;
+        width: 100%;
+      }
+
+      &--main {
+        margin: 0;
+        width: 180px;
+      }
+    }
+
+    &__title {
+      font-size: 22px;
+      margin-bottom: 6px;
+
+      @media screen and (max-width: 1365px) {
+        font-size: 20px;
+        margin-bottom: 3px;
+      }
+    }
+
+    &__description {
+      font-weight: 300;
+      line-height: 1.4;
+
+      &--main {
+        line-height: 1.5;
+      }
+    }
+
+    &__number {
+      font-size: 71px;
+      font-weight: bold;
+      line-height: 1;
+
+      &:not(&--main) {
+        background: -webkit-linear-gradient(#d10a42, #0041ca);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      @media screen and (max-width: 1365px) {
+        font-size: 58px;
+      }
+
+      &--main {
+        font-size: 74px;
+        line-height: 66px;
+      }
+    }
+
+    &__unit {
+      font-size: 14px;
+      line-height: 1;
+
+      &--main {
+        font-size: 26px;
+        font-weight: bold;
+        margin-top: 11px;
+
+        @media screen and (max-width: 1365px) {
+          font-size: 22px;
+        }
+
+        @media screen and (max-width: 1365px) {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+// секция преимущества. Конец
+
+// секция акции
+.sales {
+  &__header {
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+
+    @media screen and (max-width: 1365px) {
+      display: block;
+      margin-top: 40px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-top: 42px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    width: 560px;
+
+    @media screen and (max-width: 1365px) {
+      flex-direction: row;
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: block;
+      width: 100%;
+    }
+
+    &--main {
+      flex-direction: row;
+      height: 462px;
+      margin: 0;
+      margin-right: auto;
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+        height: 598px;
+      }
+
+      &::after {
+        background: url("../img/sales-lg.jpg");
+        content: "";
+        display: block;
+        flex-grow: 1;
+
+        @media screen and (max-width: 1365px) {
+          background: url("../img/sales-md.jpg");
+        }
+
+        @media screen and (max-width: 767px) {
+          background: url("../img/sales-sm.jpg");
+          height: 50%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.sale {
+  align-items: flex-start;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 26px 28px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 35px;
+    padding-bottom: 37px;
+  }
+
+  & * {
+    // Для IE 11
+    max-width: 100%;
+  }
+
+  &-wrapper {
+    background: linear-gradient(135deg, #ed0233 17.6%, #003eb7 95.31%);
+    height: 211px;
+    padding: 7px;
+
+    @media screen and (max-width: 1365px) {
+      width: 324px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+
+    & + & {
+      margin-top: auto;
+
+      @media screen and (max-width: 1365px) {
+        margin: 0;
+        margin-left: auto;
+      }
+
+      @media screen and (max-width: 767px) {
+        margin: 0;
+        margin-top: 30px;
+        width: 100%;
+      }
+    }
+  }
+
+  &#{&}--main {
+    background-color: #ed0233;
+    color: white;
+    padding: 41px 45px;
+    width: 280px;
+
+    @media screen and (max-width: 767px) {
+      height: 50%;
+    }
+  }
+
+  &#{&} {
+    @media screen and (max-width: 767px) {
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 10px;
+
+    &--main {
+      font-size: 28px;
+    }
+  }
+
+  &__price {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: -12px;
+  }
+
+  &__description {
+    line-height: 1.4;
+
+    &--main {
+      font-size: 18px;
+      margin-top: 14px;
+
+      @media screen and (max-width: 767px) {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__info {
+    border-bottom: 1px solid $primary;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin: auto 0 2px;
+    text-transform: uppercase;
+    position: relative;
+
+    &:hover {
+      transform: translateX(5px) scale(1.2);
+
+      @media screen and (max-width: 767px) {
+        transform: scale(1.2);
+      }
+    }
+
+    &--main {
+      border-color: white;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+  }
+}
+// секция акции. Конец
+
+// секция отзывы
+.reviews {
+  &__header {
+    text-align: center;
+  }
+
+  &__slider {
+    margin: 50px auto 0;
+    width: 560px;
+
+    @media screen and (max-width: 1365px) {
+      margin-top: 40px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-top: 42px;
+    }
+  }
+
+  &__card {
+    background-color: #1c3374;
+    color: white;
+    flex-shrink: 0;
+    margin-right: 20%;
+    padding: 58px 61px 62px 170px;
+    position: relative;
+    transition: margin 300ms ease-in;
+    width: 100%;
+
+    @media screen and (max-width: 767px) {
+      padding: 44px 18px;
+    }
+
+    &--hidden {
+      margin: 0;
+      margin-left: -100%;
+    }
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: bold;
+
+    @media screen and (max-width: 767px) {
+      margin-left: 105px;
+      line-height: 1.5;
+    }
+  }
+
+  &__photo {
+    height: 80px;
+    left: 62px;
+    position: absolute;
+    top: 62px;
+    width: 80px;
+
+    img {
+      border-radius: 50%;
+    }
+
+    @media screen and (max-width: 767px) {
+      height: 68px;
+      width: 68px;
+      left: 40px;
+      top: 40px;
+    }
+  }
+
+  &__text {
+    line-height: 1.4;
+    margin-top: 16px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 18px;
+      text-align: center;
+    }
+  }
+}
+// секция отзывы. Конец
+
+// секция контакты.
+.contacts {
+  display: flex;
+
+  @media screen and (max-width: 1365px) {
+    display: block;
+  }
+
+  &__container {
+    border-top: 1px solid $primary;
+    padding: 68px 120px;
+    width: 50%;
+
+    @media screen and (max-width: 1365px) {
+      width: 100%;
+      border: none;
+    }
+
+    &--form {
+      background-color: $primary;
+      color: white;
+      padding-left: 0;
+      padding-right: 170px;
+    }
+
+    @media screen and (max-width: 1365px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &-wrapper {
+    &-form {
+      margin-left: auto;
+      width: 410px;
+    }
+
+    &-form,
+    &-info {
+      @media screen and (max-width: 1365px) {
+        margin: 0 auto;
+        width: 472px;
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 290px;
+      }
+    }
+  }
+
+  &__header {
+    margin-bottom: 45px;
+
+    @media screen and (max-width: 1365px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &-form {
+    &__container {
+      display: flex;
+
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
+    }
+
+    &__field {
+      font-size: 14px;
+      position: relative;
+      width: 190px;
+
+      & + & {
+        margin-left: auto;
+
+        @media screen and (max-width: 767px) {
+          margin-top: 40px;
+        }
+      }
+
+      @media screen and (max-width: 1365px) {
+        width: 206px;
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+
+    &__input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      color: inherit;
+      font-size: 14px;
+      outline: none;
+      padding-bottom: 5px;
+      width: 100%;
+    }
+
+    &__label {
+      left: 0;
+      position: absolute;
+      top: 0;
+      transition: top 0.3s ease-in, font 0.3s ease-in;
+    }
+
+    &__input:hover + &__label {
+      top: -5px;
+    }
+
+    &__input:focus + &__label,
+    &__input:valid + &__label {
+      font-size: 10px;
+      top: -15px;
+    }
+
+    &__button {
+      background-color: transparent;
+      border: 3px solid white;
+      color: inherit;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      line-height: 48px;
+      margin-top: 28px;
+      text-transform: uppercase;
+      width: 100%;
+
+      &:hover {
+        background-color: white;
+        color: $primary;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 767px) {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  &-info {
+    display: flex;
+    margin-left: 4px;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+
+    &::after {
+      background-color: $primary;
+      content: "";
+      display: block;
+      margin: 0 60px;
+      width: 1px;
+
+      @media screen and (max-width: 1365px) {
+        margin: 0 48px;
+      }
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    &__list {
+      margin: 0;
+
+      & + & {
+        order: 2;
+      }
+    }
+
+    &__label {
+      font-weight: bold;
+      margin: 0;
+
+      &::after {
+        content: ":";
+      }
+
+      @media screen and (max-width: 1365px) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 767px) {
+        margin-top: 28px;
+      }
+    }
+
+    &__text {
+      margin: 0;
+      margin-top: 10px;
+      font-size: 14px;
+
+      @media screen and (max-width: 1365px) {
+        font-size: 18px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__text + &__label {
+      margin-top: 21px;
+
+      @media screen and (max-width: 1365px) {
+        margin-top: 28px;
+      }
+    }
+  }
+}
+// секция контакты. Конец

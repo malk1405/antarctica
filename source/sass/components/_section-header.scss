@@ -1,0 +1,15 @@
+.section-header {
+  font-family: "BebasNeue", Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-size: 49px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  line-height: 1;
+
+  @media screen and (max-width: 1365px) {
+    font-size: 42px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 32px;
+  }
+}
