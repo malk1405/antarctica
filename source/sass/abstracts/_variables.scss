@@ -1,4 +1,13 @@
-// colors
+//=== Colors ===/
 
-$primary: #102654;
-// $primary: red;
+$light: #f9fbfd;
+$dark: #102654;
+
+//=== /Colors ===/
+
+//=== Breakpoints ===/
+$breakpoints: (
+  phone: 767px,
+  tablet: 1023px,
+);
+//=== /Breakpoints ===/

@@ -1,9 +1,45 @@
-.body-wrapper {
+.body {
+  background-color: $light;
+  color: $dark;
   display: flex;
   flex-direction: column;
+  font-family: "Montserrat", Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
   height: 100vh;
-
-  & > * {
-    flex-shrink: 0;
-  }
+  min-width: 320px;
 }
+
+.body > * {
+  flex-shrink: 0;
+}
+
+// Для отладки
+// .body {
+//   position: relative;
+
+//   &,
+//   &#{&} * {
+//     background-color: rgba(209, 10, 66, 0.11);
+//   }
+
+//   &-bg {
+//     background-image: url("../img/temp/desktop.png");
+//     background-position: top left;
+//     background-repeat: no-repeat;
+//     height: 100%;
+//     left: 0;
+//     margin-bottom: 40px;
+//     position: absolute;
+//     top: 0;
+//     width: 100%;
+//     z-index: -1;
+
+//     @include mq(tablet) {
+//       background-image: url("../img/temp/tablet.png");
+//     }
+
+//     @include mq(phone) {
+//       background-image: url("../img/temp/phone.png");
+//     }
+//   }
+// }
+// Для отладки. Конец

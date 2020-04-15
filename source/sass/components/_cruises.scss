@@ -1,0 +1,56 @@
+.cruises {
+  background-color: $dark;
+  color: $light;
+  padding: 283px 0;
+
+  @include mq(phone) {
+    padding: 185px 0;
+  }
+}
+
+.cruises h1,
+.cruises p {
+  margin: 0;
+  margin-left: 8%;
+
+  @include mq(tablet) {
+    margin-left: 0;
+  }
+}
+
+.cruises h1 {
+  font-size: 54px;
+  font-weight: bold;
+  line-height: 1.25;
+  margin-top: -12px;
+
+  @include mq(tablet) {
+    font-size: 50px;
+    margin-top: -15px;
+  }
+
+  @include mq(phone) {
+    font-size: 36px;
+    margin-top: -10px;
+  }
+}
+
+.cruises p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: -7px;
+  margin-top: 8px;
+
+  @include mq(tablet) {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+
+  @include mq(phone) {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: -4px;
+    width: 80%;
+  }
+}

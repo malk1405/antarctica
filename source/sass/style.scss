@@ -1,4 +1,5 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 @import "base/typography";
 @import "base/normalize";
@@ -8,8 +9,6 @@
 @import "components/sprite";
 @import "components/container";
 @import "components/visually-hidden";
-@import "components/section-header";
-@import "components/img";
 
 @import "layout/body";
 @import "layout/header";
