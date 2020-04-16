@@ -30,25 +30,7 @@
 }
 
 .header__logo {
-  display: block;
-  height: 38px;
   margin-right: auto;
-  width: 70px;
-
-  &:hover {
-    transform: scale(1.2);
-    transform-origin: bottom left;
-  }
-
-  @include mq(tablet) {
-    height: 20px;
-    width: 38px;
-  }
-
-  @include mq(phone) {
-    height: 22px;
-    width: 42px;
-  }
 }
 
 .header svg {
