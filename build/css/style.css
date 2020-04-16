@@ -388,6 +388,9 @@ template {
     .container {
       padding: 0 15px; } }
 
+.picture-container {
+  background-color: #3370a8; }
+
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -669,7 +672,6 @@ template {
       width: 80%; } }
 
 .cruises__image-container {
-  background-color: #102654;
   height: 100%;
   left: 0;
   position: absolute;
