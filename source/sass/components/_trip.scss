@@ -1,0 +1,80 @@
+.trip {
+  align-items: center;
+  display: flex;
+}
+
+.trip__description {
+  flex-basis: 45%;
+  margin-right: 6.8%;
+  flex-shrink: 0;
+}
+
+.trip__description h2 {
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.trip__description p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.trip picture {
+  display: block;
+  flex-grow: 1;
+  min-width: 301px;
+}
+
+.trip img {
+  display: block;
+  width: 100%;
+}
+
+@include mq(tablet) {
+  .trip__description,
+  .trip picture {
+    flex-basis: 47%;
+    flex-grow: 1;
+    min-width: 324px;
+  }
+
+  .trip__description {
+    margin-right: 4.5%;
+  }
+
+  .trip__description h2 {
+    margin-bottom: 10px;
+    margin-top: -10px;
+    width: 65%;
+  }
+
+  .trip__description p {
+    margin-bottom: -10px;
+  }
+}
+
+@include mq(phone) {
+  .trip {
+    display: block;
+  }
+
+  .trip__description,
+  .trip picture {
+    min-width: 100%;
+  }
+
+  .trip__description {
+    margin-right: 0;
+  }
+
+  .trip__description h2 {
+    margin-bottom: 10px;
+    margin-top: -7px;
+    width: 70%;
+  }
+
+  .trip__description p {
+    margin-bottom: 33px;
+  }
+}
