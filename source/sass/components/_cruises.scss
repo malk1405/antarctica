@@ -1,7 +1,7 @@
 .cruises {
-  background-color: $dark;
   color: $light;
   padding: 283px 0;
+  position: relative;
 
   @include mq(phone) {
     padding: 185px 0;
@@ -10,11 +10,16 @@
 
 .cruises h1,
 .cruises p {
-  margin: 0;
-  margin-left: 8%;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 84%;
 
   @include mq(tablet) {
-    margin-left: 0;
+    min-width: 678px;
+  }
+
+  @include mq(phone) {
+    min-width: 290px;
   }
 }
 
@@ -50,7 +55,41 @@
   @include mq(phone) {
     font-size: 16px;
     margin-top: 12px;
-    margin-bottom: -4px;
+    margin-bottom: -7px;
+    padding-right: 20%;
     width: 80%;
+  }
+}
+
+.cruises__image-container {
+  background-color: $dark;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.cruises__image-container picture {
+  height: 100%;
+  width: 100%;
+}
+
+.cruises__image-container source,
+.cruises__image-container img {
+  $top: 75%;
+  top: $top;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  transform: translate(-50%, -$top);
+
+  @include mq(tablet) {
+    $top: 40%;
+    top: $top;
+    transform: translate(-50%, -$top);
   }
 }
