@@ -10,9 +10,43 @@
   </head>
   <body class="body">
     <!-- Для отладки-->
-    <!-- <div class="body-bg"></div> -->
+    <div class="body-bg"></div>
     <!-- Для отладки. конец-->
 
+    <header class="header header--menu-visible container">
+      <a class="header__logo sprite">
+        <svg class="sprite__svg sprite__svg--lg" width="70" height="38">
+          <use xlink:href="img/svg/sprite.svg#logo--lg"></use>
+        </svg>
+        <svg class="sprite__svg sprite__svg--md" width="38" height="20">
+          <use xlink:href="img/svg/sprite.svg#logo--md"></use>
+        </svg>
+        <svg class="sprite__svg sprite__svg--sm" width="42" height="22">
+          <use xlink:href="img/svg/sprite.svg#logo--sm"></use>
+        </svg>
+        <img src="img/svg/sprite.svg" height="0" width="0" alt="Лого Круизы">
+        <span class="visually-hidden">Лого Круизы</span></a>
+      <ul class="header__links">
+        <li class="header__link"><a href="#">Преимущества</a></li>
+        <li class="header__link"><a href="#">Направления</a></li>
+        <li class="header__link"><a href="#">Ближайшие круизы</a></li>
+        <li class="header__link"><a href="#">Контакты</a></li>
+      </ul>
+      <button type="button" class="header__button header__button--open sprite" title="Показать">
+        <svg class="sprite__svg sprite__svg--sm" width="26" height="14">
+          <use xlink:href="img/svg/sprite.svg#button-open"></use>
+        </svg>
+        <img src="img/svg/sprite.svg" height="0" width="0" alt="Показать меню">
+        <span class="visually-hidden">Показать меню</span>
+      </button>
+      <button type="button" class="header__button header__button--close spite" title="Скрыть">
+        <svg class="sprite__svg sprite__svg--sm" width="13" height="13">
+          <use xlink:href="img/svg/sprite.svg#button-close"></use>
+        </svg>
+        <img src="img/svg/sprite.svg" height="0" width="0" alt="Скрыть меню">
+        <span class="visually-hidden">Скрыть меню</span>
+      </button>
+    </header>
     <main class="cruises">
       <div class="container">
         <h1>Круизы в Антарктику</h1>
