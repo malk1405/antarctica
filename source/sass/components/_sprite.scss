@@ -1,32 +1,32 @@
 .sprite {
   position: relative;
+}
 
-  &__svg {
+.sprite__svg {
+  display: none;
+
+  &--lg {
+    display: block;
+  }
+
+  @include mq(tablet) {
     display: none;
 
-    &--lg {
+    &--md {
       display: block;
     }
-
-    @media screen and (max-width: 1365px) {
-      display: none;
-
-      &--md {
-        display: block;
-      }
-    }
-
-    @media screen and (max-width: 767px) {
-      display: none;
-
-      &--sm {
-        display: block;
-      }
-    }
   }
 
-  img {
-    position: absolute;
-    top: 0;
+  @include mq(phone) {
+    display: none;
+
+    &--sm {
+      display: block;
+    }
   }
+}
+
+.sprite img {
+  position: absolute;
+  top: 0;
 }
