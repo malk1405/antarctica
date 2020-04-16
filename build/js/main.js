@@ -1605,6 +1605,34 @@ function activateHeader() {
 
 /***/ }),
 
+/***/ "./source/js/components/links.js":
+/*!***************************************!*\
+  !*** ./source/js/components/links.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return deactivateLinks; });
+/* harmony import */ var core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function deactivateLinks() {
+  function noop(e) {
+    e.preventDefault();
+  }
+
+  document.querySelectorAll('a[href="#"]').forEach(function (link) {
+    link.addEventListener('click', noop);
+  });
+}
+
+/***/ }),
+
 /***/ "./source/js/main.js":
 /*!***************************!*\
   !*** ./source/js/main.js ***!
@@ -1615,9 +1643,12 @@ function activateHeader() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ "./source/js/components/header.js");
+/* harmony import */ var _components_links__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/links */ "./source/js/components/links.js");
+
 
 
 (function activate() {
+  Object(_components_links__WEBPACK_IMPORTED_MODULE_1__["default"])();
   Object(_components_header__WEBPACK_IMPORTED_MODULE_0__["default"])();
 })();
 
