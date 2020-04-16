@@ -1593,7 +1593,7 @@ __webpack_require__.r(__webpack_exports__);
 function activateHeader() {
   var header = document.querySelector('.header');
   if (!header) return;
-  header.classList.add('js');
+  header.classList.remove('header--no-js');
   header.classList.remove('header--menu-visible');
   var buttons = header.querySelectorAll('.header__button');
   buttons.forEach(function (button) {

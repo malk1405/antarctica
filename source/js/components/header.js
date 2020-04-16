@@ -2,7 +2,7 @@ export default function activateHeader() {
   const header = document.querySelector('.header');
   if (!header) return;
 
-  header.classList.add('js');
+  header.classList.remove('header--no-js');
   header.classList.remove('header--menu-visible');
 
   const buttons = header.querySelectorAll('.header__button');
