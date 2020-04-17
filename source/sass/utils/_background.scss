@@ -38,16 +38,19 @@
 
       background-image: url("../img/temp/desktop-b.png");
       height: 1239px;
+      top: 120px;
 
       @media (max-width: 1365px) {
         background-image: url("../img/temp/tablet-b.png");
         height: 1460px;
+        top: 100px;
       }
 
       @include mq(phone) {
         // background-image: url("../img/temp/menu.png");
         background-image: url("../img/temp/phone-b.png");
         height: 1746px;
+        top: 65px;
       }
     }
   }
