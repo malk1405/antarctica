@@ -392,6 +392,22 @@ template {
     .container {
       padding: 0 15px; } }
 
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0 -15px;
+  padding: 0; }
+
+.cards__item {
+  margin: 0 15px 30px; }
+
 .picture-container {
   background-color: #3370a8; }
 
@@ -845,19 +861,6 @@ template {
       .advantages::after {
         background-image: url("../img/adv/adv-bg@2x--lg.jpg"); } }
 
-.advantages__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  list-style: none;
-  margin: 0 -1.5%;
-  padding: 0; }
-
 .advantages__card {
   background-color: #f9fbfd;
   display: -webkit-box;
@@ -869,7 +872,6 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 1.5% 30px;
   max-width: 360px;
   min-width: 360px;
   padding: 30px; }
@@ -909,12 +911,9 @@ template {
         background-image: url("../img/adv/adv-bg@2x--md.jpg"); } }
 
 @media screen and (max-width: 1023px) {
-  .advantages__cards {
-    margin: 0 -15px; }
   .advantages__card {
     -ms-flex-preferred-size: 206px;
         flex-basis: 206px;
-    margin: 0 15px 30px;
     max-width: 206px;
     min-width: 206px;
     padding: 25px 16px 25px 20px; }
@@ -939,8 +938,6 @@ template {
         background-image: url("../img/adv/adv-bg@2x--sm.jpg"); } }
 
 @media screen and (max-width: 767px) {
-  .advantages__cards {
-    margin: 0 -15px; }
   .advantages__card {
     -ms-flex-preferred-size: 290px;
         flex-basis: 290px;
