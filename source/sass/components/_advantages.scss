@@ -16,7 +16,7 @@
   }
 
   &::before {
-    background-color: #e3ecf6;
+    background-color: $picture-bg-light;
   }
 
   &::after {
@@ -43,8 +43,6 @@
 }
 
 .advantages__card h3 {
-  font-size: 18px;
-  font-weight: 500;
   margin-bottom: 13px;
   margin-top: 22px;
 }
@@ -81,7 +79,7 @@
     flex-basis: 206px;
     max-width: 206px;
     min-width: 206px;
-    padding: 25px 16px 25px 20px;
+    padding: 25px 15px 25px 20px;
   }
 
   .advantages__card h3 {

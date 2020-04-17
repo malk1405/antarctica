@@ -12,6 +12,11 @@
   text-align: center;
 }
 
+.section h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 @include mq(tablet) {
   .section {
     margin-top: 100px;

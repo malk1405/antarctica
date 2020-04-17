@@ -1,0 +1,102 @@
+.catalog__card {
+  color: $light;
+  display: flex;
+  flex-basis: 260px;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+  max-width: 309px;
+  min-height: 386px;
+  min-width: 260px;
+  padding: 25px 30px;
+  position: relative;
+
+  &:hover {
+    padding: 32px 25px;
+  }
+
+  &::after {
+    background-color: $picture-bg;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -5;
+  }
+}
+
+.catalog__card h3 {
+  margin: 0;
+  margin-top: auto;
+}
+.catalog__card:hover h3 {
+  margin: 0;
+  margin-bottom: auto;
+}
+
+.catalog__info {
+  height: 0;
+  overflow: hidden;
+}
+
+.catalog__card:hover .catalog__info {
+  height: auto;
+}
+
+.catalog__info dl,
+.catalog__info dd {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__info dl {
+  margin-top: auto;
+}
+
+.catalog__info dt {
+  font-weight: 500;
+  margin-top: 14px;
+}
+
+.catalog__book {
+  background-color: $light;
+  color: $dark;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  line-height: 40px;
+  margin-bottom: 3px;
+  margin-top: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@include mq(tablet) {
+  .catalog__card {
+    padding: 25px 35px 30px;
+  }
+
+  .catalog__card:hover {
+    padding: 32px 35px 30px;
+  }
+
+  .catalog__book {
+    margin-bottom: 5px;
+    margin-top: 25px;
+  }
+}
+
+@include mq(phone) {
+  .catalog__card {
+    padding-bottom: 20px;
+  }
+
+  .catalog__card:hover {
+    padding-bottom: 30px;
+  }
+}

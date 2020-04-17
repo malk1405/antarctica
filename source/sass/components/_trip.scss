@@ -21,6 +21,7 @@
 }
 
 .trip picture {
+  background-color: $picture-bg-light;
   display: block;
   flex-grow: 1;
   min-width: 301px;
