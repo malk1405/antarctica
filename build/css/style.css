@@ -1045,8 +1045,8 @@ template {
 .catalog__card img {
   display: block;
   left: 50%;
-  min-height: 101%;
-  min-width: 101%;
+  min-height: 104%;
+  min-width: 104%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
