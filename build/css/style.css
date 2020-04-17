@@ -856,7 +856,8 @@ template {
     background-image: url("../img/adv/adv-bg@1x--lg.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    opacity: 0.1; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .advantages::after {
         background-image: url("../img/adv/adv-bg@2x--lg.jpg"); } }
