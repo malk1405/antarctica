@@ -967,23 +967,17 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 260px;
-      flex-basis: 260px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   max-width: 309px;
   min-height: 386px;
   min-width: 260px;
   overflow: hidden;
   padding: 25px 30px;
-  position: relative; }
+  position: relative;
+  width: 20%; }
   .catalog__card:hover {
     background-color: #011c40;
     padding: 32px 25px; }
@@ -1060,7 +1054,8 @@ template {
 
 @media screen and (max-width: 1023px) {
   .catalog__card {
-    padding: 25px 35px 30px; }
+    padding: 25px 35px 30px;
+    width: 100%; }
   .catalog__card:hover {
     padding: 32px 35px 30px; }
   .catalog__book {
