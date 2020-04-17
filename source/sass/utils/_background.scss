@@ -15,7 +15,7 @@
     width: 1366px;
     max-width: 100%;
 
-    @media (max-width: 1367px) {
+    @media (max-width: 1365px) {
       width: 768px;
     }
 
@@ -39,7 +39,7 @@
       background-image: url("../img/temp/desktop-b.png");
       height: 1239px;
 
-      @media (max-width: 1367px) {
+      @media (max-width: 1365px) {
         background-image: url("../img/temp/tablet-b.png");
         height: 1460px;
       }

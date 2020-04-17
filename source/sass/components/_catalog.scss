@@ -5,16 +5,14 @@
 .catalog__card {
   color: $light;
   display: flex;
-  flex-basis: 260px;
   flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 0;
   max-width: 309px;
   min-height: 386px;
   min-width: 260px;
   overflow: hidden;
   padding: 25px 30px;
   position: relative;
+  width: 20%;
 
   &:hover {
     background-color: $dark;
@@ -105,6 +103,7 @@
 @include mq(tablet) {
   .catalog__card {
     padding: 25px 35px 30px;
+    width: 100%;
   }
 
   .catalog__card:hover {
