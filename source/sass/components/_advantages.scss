@@ -20,11 +20,15 @@
   }
 
   &::after {
-    background-image: url("../img/adv/adv-bg--lg.jpg");
+    background-image: url("../img/adv/adv-bg@1x--lg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.1;
+    // opacity: 0.1;
+
+    @include mret() {
+      background-image: url("../img/adv/adv-bg@2x--lg.jpg");
+    }
   }
 }
 
@@ -75,7 +79,11 @@
     padding-top: 100px;
 
     &::after {
-      background-image: url("../img/adv/adv-bg--md.jpg");
+      background-image: url("../img/adv/adv-bg@1x--md.jpg");
+
+      @include mret() {
+        background-image: url("../img/adv/adv-bg@2x--md.jpg");
+      }
     }
   }
 
@@ -113,7 +121,11 @@
     padding-top: 65px;
 
     &::after {
-      background-image: url("../img/adv/adv-bg--sm.jpg");
+      background-image: url("../img/adv/adv-bg@1x--sm.jpg");
+
+      @include mret() {
+        background-image: url("../img/adv/adv-bg@2x--sm.jpg");
+      }
     }
   }
 
