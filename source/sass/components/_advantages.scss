@@ -32,21 +32,11 @@
   }
 }
 
-.advantages__cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  margin: 0 -1.5%;
-  padding: 0;
-}
-
 .advantages__card {
   background-color: $light;
   display: flex;
   flex-basis: 360px;
   flex-direction: column;
-  margin: 0 1.5% 30px;
   max-width: 360px;
   min-width: 360px;
   padding: 30px;
@@ -87,13 +77,8 @@
     }
   }
 
-  .advantages__cards {
-    margin: 0 -15px;
-  }
-
   .advantages__card {
     flex-basis: 206px;
-    margin: 0 15px 30px;
     max-width: 206px;
     min-width: 206px;
     padding: 25px 16px 25px 20px;
@@ -127,10 +112,6 @@
         background-image: url("../img/adv/adv-bg@2x--sm.jpg");
       }
     }
-  }
-
-  .advantages__cards {
-    margin: 0 -15px;
   }
 
   .advantages__card {
