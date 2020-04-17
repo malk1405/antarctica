@@ -409,7 +409,7 @@ template {
   margin: 0 15px 30px; }
 
 .picture-container {
-  background-color: #3370a8; }
+  background-color: #195288; }
 
 .visually-hidden {
   border: 0;
@@ -451,6 +451,10 @@ template {
   margin-bottom: 50px;
   margin-top: -8px;
   text-align: center; }
+
+.section h3 {
+  font-size: 18px;
+  font-weight: 500; }
 
 @media screen and (max-width: 1023px) {
   .section {
@@ -794,6 +798,7 @@ template {
   line-height: 1.5; }
 
 .trip picture {
+  background-color: #e3ecf6;
   display: block;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -878,8 +883,6 @@ template {
   padding: 30px; }
 
 .advantages__card h3 {
-  font-size: 18px;
-  font-weight: 500;
   margin-bottom: 13px;
   margin-top: 22px; }
 
@@ -917,7 +920,7 @@ template {
         flex-basis: 206px;
     max-width: 206px;
     min-width: 206px;
-    padding: 25px 16px 25px 20px; }
+    padding: 25px 15px 25px 20px; }
   .advantages__card h3 {
     line-height: 1.4;
     margin-bottom: 9px;
@@ -958,3 +961,93 @@ template {
     margin-bottom: -6px; }
   .advantages__icon-container {
     height: 26px; } }
+
+.catalog__card {
+  color: #f9fbfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 260px;
+      flex-basis: 260px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  max-width: 309px;
+  min-height: 386px;
+  min-width: 260px;
+  padding: 25px 30px;
+  position: relative; }
+  .catalog__card:hover {
+    padding: 32px 25px; }
+  .catalog__card::after {
+    background-color: #195288;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -5; }
+
+.catalog__card h3 {
+  margin: 0;
+  margin-top: auto; }
+
+.catalog__card:hover h3 {
+  margin: 0;
+  margin-bottom: auto; }
+
+.catalog__info {
+  height: 0;
+  overflow: hidden; }
+
+.catalog__card:hover .catalog__info {
+  height: auto; }
+
+.catalog__info dl,
+.catalog__info dd {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0; }
+
+.catalog__info dl {
+  margin-top: auto; }
+
+.catalog__info dt {
+  font-weight: 500;
+  margin-top: 14px; }
+
+.catalog__book {
+  background-color: #f9fbfd;
+  color: #011c40;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  line-height: 40px;
+  margin-bottom: 3px;
+  margin-top: 25px;
+  text-align: center;
+  text-decoration: none; }
+
+@media screen and (max-width: 1023px) {
+  .catalog__card {
+    padding: 25px 35px 30px; }
+  .catalog__card:hover {
+    padding: 32px 35px 30px; }
+  .catalog__book {
+    margin-bottom: 5px;
+    margin-top: 25px; } }
+
+@media screen and (max-width: 767px) {
+  .catalog__card {
+    padding-bottom: 20px; }
+  .catalog__card:hover {
+    padding-bottom: 30px; } }
