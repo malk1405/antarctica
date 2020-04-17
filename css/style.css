@@ -837,11 +837,13 @@ template {
   .advantages::before {
     background-color: #e3ecf6; }
   .advantages::after {
-    background-image: url("../img/adv/adv-bg--lg.jpg");
+    background-image: url("../img/adv/adv-bg@1x--lg.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.1; }
+    background-size: cover; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .advantages::after {
+        background-image: url("../img/adv/adv-bg@2x--lg.jpg"); } }
 
 .advantages__cards {
   display: -webkit-box;
@@ -901,7 +903,12 @@ template {
     padding-bottom: 70px;
     padding-top: 100px; }
     .advantages::after {
-      background-image: url("../img/adv/adv-bg--md.jpg"); }
+      background-image: url("../img/adv/adv-bg@1x--md.jpg"); } }
+    @media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1023px) and (min-resolution: 144dpi), screen and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .advantages::after {
+        background-image: url("../img/adv/adv-bg@2x--md.jpg"); } }
+
+@media screen and (max-width: 1023px) {
   .advantages__cards {
     margin: 0 -15px; }
   .advantages__card {
@@ -926,7 +933,12 @@ template {
     padding-bottom: 35px;
     padding-top: 65px; }
     .advantages::after {
-      background-image: url("../img/adv/adv-bg--sm.jpg"); }
+      background-image: url("../img/adv/adv-bg@1x--sm.jpg"); } }
+    @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min-resolution: 144dpi), screen and (max-width: 767px) and (min-resolution: 1.5dppx) {
+      .advantages::after {
+        background-image: url("../img/adv/adv-bg@2x--sm.jpg"); } }
+
+@media screen and (max-width: 767px) {
   .advantages__cards {
     margin: 0 -15px; }
   .advantages__card {
