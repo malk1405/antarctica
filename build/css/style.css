@@ -962,6 +962,9 @@ template {
   .advantages__icon-container {
     height: 26px; } }
 
+.catalog__cards {
+  margin-bottom: -30px; }
+
 .catalog__card {
   color: #f9fbfd;
   display: -webkit-box;
