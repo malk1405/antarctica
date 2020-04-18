@@ -1,6 +1,6 @@
 'use strict';
 
-function activateMap() {
+(function activateMap() {
   const contacts = document.querySelector('.contacts');
 
   if (!contacts) return;
@@ -8,7 +8,11 @@ function activateMap() {
   const map = contacts.querySelector('#map');
   if (!map) return;
 
+  if (!ymaps) return;
+
+  // setTimeout(() => {
   ymaps.ready(init);
+  // }, 5000);
 
   function init() {
     contacts.classList.remove('contacts--no-js');
@@ -33,6 +37,4 @@ function activateMap() {
 
     map.geoObjects.add(myPlacemark);
   }
-}
-
-export default activateMap;
+})();
