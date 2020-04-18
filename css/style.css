@@ -1221,3 +1221,99 @@ template {
     text-align: center; }
   .booking__form button {
     margin-top: -4px; } }
+
+.contacts {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.5;
+  margin-bottom: 120px; }
+
+.contacts__info,
+.contacts__map-container {
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
+  max-width: 500px; }
+
+.contacts__info p,
+.contacts__info dl {
+  margin: 0; }
+
+.contacts__info p {
+  font-size: 18px;
+  font-weight: 500; }
+
+.contacts dl {
+  font-size: 16px;
+  margin-top: 31px;
+  position: relative; }
+
+.contacts dt {
+  height: 0;
+  margin-top: 24px; }
+
+.contacts dd {
+  margin-top: -3px;
+  margin-left: 28px; }
+
+.contacts a {
+  color: inherit;
+  text-decoration: none; }
+  .contacts a:hover {
+    text-decoration: underline; }
+
+.contacts__map-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 100px;
+  max-width: 560px;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1; }
+
+.contacts__map-image,
+.contacts picture,
+.contacts img {
+  display: block;
+  max-width: 100%;
+  width: 100%; }
+
+.contacts__map {
+  height: 306px;
+  max-width: 560px; }
+
+.contacts--no-js .contacts__map {
+  display: none; }
+
+@media screen and (max-width: 1023px) {
+  .contacts {
+    margin-bottom: 100px; }
+  .contacts dl {
+    margin-top: 29px; }
+  .contacts__map-container {
+    margin-right: 30px; }
+  .contacts__map {
+    height: 335px;
+    width: 560px; } }
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: block;
+    margin-top: 57px;
+    margin-bottom: 65px; }
+  .contacts__info {
+    margin: 0 auto; }
+  .contacts__map-container {
+    margin-right: 0;
+    margin-top: 35px;
+    max-width: 100%; }
+  .contacts__map-image {
+    margin: auto;
+    max-width: 290px; } }
