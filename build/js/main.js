@@ -1574,6 +1574,41 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./source/js/components/form.js":
+/*!**************************************!*\
+  !*** ./source/js/components/form.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var activateForm = function activateForm() {
+  var form = document.querySelector('.booking__form form');
+  if (!form) return;
+  var phoneText = '';
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    window.alert('Данные отправлены');
+    form.reset();
+    phoneText = '';
+  });
+
+  (function validatePhone() {
+    var phoneField = form.querySelector('#booking__phone');
+    if (!phoneField) return;
+    phoneField.addEventListener('input', function (event) {
+      var value = event.target.value;
+      phoneText = /^[0-9]*$/.test(value) ? value : phoneText;
+      phoneField.value = phoneText;
+    });
+  })();
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (activateForm);
+
+/***/ }),
+
 /***/ "./source/js/components/header.js":
 /*!****************************************!*\
   !*** ./source/js/components/header.js ***!
@@ -1644,12 +1679,15 @@ function deactivateLinks() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ "./source/js/components/header.js");
 /* harmony import */ var _components_links__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/links */ "./source/js/components/links.js");
+/* harmony import */ var _components_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/form */ "./source/js/components/form.js");
+
 
 
 
 (function activate() {
   Object(_components_links__WEBPACK_IMPORTED_MODULE_1__["default"])();
   Object(_components_header__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  Object(_components_form__WEBPACK_IMPORTED_MODULE_2__["default"])();
 })();
 
 /***/ })
