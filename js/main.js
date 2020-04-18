@@ -1633,48 +1633,6 @@ function deactivateLinks() {
 
 /***/ }),
 
-/***/ "./source/js/components/map.js":
-/*!*************************************!*\
-  !*** ./source/js/components/map.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-function activateMap() {
-  var contacts = document.querySelector('.contacts');
-  if (!contacts) return;
-  var map = contacts.querySelector('#map');
-  if (!map) return;
-  ymaps.ready(init);
-
-  function init() {
-    contacts.classList.remove('contacts--no-js');
-    var position = [59.938635, 30.323118];
-    var map = new ymaps.Map('map', {
-      center: position,
-      zoom: 16
-    });
-    var myPlacemark = new ymaps.Placemark(position, {
-      hintContent: 'Круизы в Антарктику',
-      balloonContent: 'Только у нас вы можете приобрести круиз в Антарктику по самым дешевым ценам'
-    }, {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/svg/location.svg',
-      iconImageSize: [18, 22],
-      iconImageOffset: [-9, -22]
-    });
-    map.geoObjects.add(myPlacemark);
-  }
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (activateMap);
-
-/***/ }),
-
 /***/ "./source/js/main.js":
 /*!***************************!*\
   !*** ./source/js/main.js ***!
@@ -1686,15 +1644,12 @@ function activateMap() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ "./source/js/components/header.js");
 /* harmony import */ var _components_links__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/links */ "./source/js/components/links.js");
-/* harmony import */ var _components_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/map */ "./source/js/components/map.js");
-
 
 
 
 (function activate() {
   Object(_components_links__WEBPACK_IMPORTED_MODULE_1__["default"])();
   Object(_components_header__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  Object(_components_map__WEBPACK_IMPORTED_MODULE_2__["default"])();
 })();
 
 /***/ })
