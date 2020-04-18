@@ -8,25 +8,6 @@
   top: 0;
   width: 100%;
   z-index: 2;
-
-  @include mq(tablet) {
-    padding-top: 30px;
-  }
-
-  @include mq(phone) {
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 20px;
-
-    &--no-js {
-      position: static;
-    }
-
-    &--menu-visible {
-      background-color: $light;
-      color: $dark;
-    }
-  }
 }
 
 .header__logo {
@@ -37,10 +18,10 @@
   fill: $light;
 }
 
-@include mq(phone) {
-  .header--menu-visible svg {
-    fill: $dark;
-  }
+.header__nav,
+.header__links {
+  margin: 0;
+  padding: 0;
 }
 
 .header__links {
@@ -51,41 +32,10 @@
   justify-content: center;
   line-height: 38px;
   list-style: none;
-  margin: 0;
-  padding: 0;
-
-  @include mq(tablet) {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  @include mq(phone) {
-    display: none;
-    font-size: 18px;
-    margin-top: 24px;
-    min-width: 100%;
-    order: 2;
-    padding-bottom: 61px;
-  }
-}
-
-@include mq(phone) {
-  .header--menu-visible .header__links {
-    display: block;
-  }
 }
 
 .header__link {
   margin-left: 33px;
-
-  @include mq(tablet) {
-    margin-left: 24px;
-  }
-
-  @include mq(phone) {
-    margin: 0;
-    margin-top: 23px;
-  }
 }
 
 .header__link a {
@@ -94,7 +44,6 @@
 
   &:hover {
     text-decoration: underline;
-    transform: scale(1.2);
   }
 }
 
@@ -112,9 +61,6 @@
   &--open {
     height: 14px;
     width: 26px;
-    @include mq(phone) {
-      display: block;
-    }
   }
 
   &--close {
@@ -123,16 +69,64 @@
   }
 }
 
+@include mq(tablet) {
+  .header {
+    padding-top: 30px;
+  }
+
+  .header__links {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .header__link {
+    margin-left: 24px;
+  }
+}
+
 @include mq(phone) {
+  .header {
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+
+    &--no-js {
+      position: static;
+    }
+
+    &--menu-visible {
+      background-color: $light;
+      color: $dark;
+    }
+  }
+
+  .header__nav {
+    display: none;
+    font-size: 18px;
+    margin-top: 24px;
+    min-width: 100%;
+    order: 2;
+    padding-bottom: 61px;
+  }
+
+  .header__links,
+  .header__button--open,
+  .header--menu-visible .header__nav,
   .header--menu-visible .header__button--close {
     display: block;
   }
 
-  .header--menu-visible .header__button--open {
+  .header__link {
+    margin: 0;
+    margin-top: 23px;
+  }
+
+  .header--menu-visible svg {
+    fill: $dark;
+  }
+
+  .header--menu-visible .header__button--open,
+  .header--no-js .header__button {
     display: none;
   }
-}
-
-.header--no-js .header__button {
-  display: none;
 }
