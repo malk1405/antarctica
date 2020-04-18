@@ -138,7 +138,7 @@ gulp.task('copy', function () {
     .src(
       [
         'source/fonts/**/*.{woff,woff2}',
-        'source/img/**/*.{webp,jpg,png}',
+        'source/img/**/*.{webp,jpg,png,svg}',
         'source//*.ico',
       ],
       {
