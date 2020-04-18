@@ -967,7 +967,7 @@ template {
   padding: 25px 30px;
   position: relative;
   width: 20%; }
-  .catalog__card:hover {
+  .catalog__card:hover, .catalog__card:focus-within {
     background-color: #011c40;
     padding: 32px 25px; }
   .catalog__card::after {
@@ -985,7 +985,8 @@ template {
   margin: 0;
   margin-top: auto; }
 
-.catalog__card:hover h3 {
+.catalog__card:hover h3,
+.catalog__card:focus-within h3 {
   margin: 0;
   margin-bottom: auto; }
 
@@ -993,7 +994,8 @@ template {
   height: 0;
   overflow: hidden; }
 
-.catalog__card:hover .catalog__info {
+.catalog__card:hover .catalog__info,
+.catalog__card:focus-within .catalog__info {
   height: auto; }
 
 .catalog__info dl,

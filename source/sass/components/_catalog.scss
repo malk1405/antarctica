@@ -14,7 +14,8 @@
   position: relative;
   width: 20%;
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     background-color: $dark;
     padding: 32px 25px;
   }
@@ -36,7 +37,8 @@
   margin: 0;
   margin-top: auto;
 }
-.catalog__card:hover h3 {
+.catalog__card:hover h3,
+.catalog__card:focus-within h3 {
   margin: 0;
   margin-bottom: auto;
 }
@@ -46,7 +48,8 @@
   overflow: hidden;
 }
 
-.catalog__card:hover .catalog__info {
+.catalog__card:hover .catalog__info,
+.catalog__card:focus-within .catalog__info {
   height: auto;
 }
 
