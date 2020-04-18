@@ -33,10 +33,14 @@
         <span class="visually-hidden">Лого Круизы</span></a>
       <nav class="header__nav">
         <ul class="header__links">
-          <li class="header__link"><a href="#">Преимущества</a></li>
-          <li class="header__link"><a href="#">Направления</a></li>
-          <li class="header__link"><a href="#">Ближайшие круизы</a></li>
-          <li class="header__link"><a href="#">Контакты</a></li>
+          <li class="header__link">
+            <a class="link" href="#">Преимущества</a>
+          </li>
+          <li class="header__link"><a class="link" href="#">Направления</a></li>
+          <li class="header__link">
+            <a class="link" href="#">Ближайшие круизы</a>
+          </li>
+          <li class="header__link"><a class="link" href="#">Контакты</a></li>
         </ul>
       </nav>
       <button type="button" class="header__button header__button--open sprite" title="Показать">
@@ -194,7 +198,7 @@
               <dt>Цена</dt>
               <dd>от 11500 $</dd>
             </dl>
-            <a class="catalog__book" href="#">Забронировать</a>
+            <a class="link catalog__book focus" href="#">Забронировать</a>
           </div>
           <picture>
             <!-- 1х: 309px; 2x: 618px -->
@@ -216,7 +220,7 @@
               <dt>Цена</dt>
               <dd>от 14500 $</dd>
             </dl>
-            <a class="catalog__book" href="#">Забронировать</a>
+            <a class="link catalog__book focus" href="#">Забронировать</a>
           </div>
           <picture>
             <!-- 1х: 309px; 2x: 618px -->
@@ -241,7 +245,7 @@
               <dt>Цена</dt>
               <dd>от 14500 $</dd>
             </dl>
-            <a class="catalog__book" href="#">Забронировать</a>
+            <a class="link catalog__book focus" href="#">Забронировать</a>
           </div>
           <picture>
             <!-- 1х: 309px; 2x: 618px -->
@@ -263,7 +267,7 @@
               <dt>Цена</dt>
               <dd>от 9700 $</dd>
             </dl>
-            <a class="catalog__book" href="#">Забронировать</a>
+            <a class="link catalog__book focus" href="#">Забронировать</a>
           </div>
           <picture>
             <!-- 1х: 309px; 2x: 618px -->
@@ -287,7 +291,7 @@
               <dt>Цена</dt>
               <dd>от 11700 $</dd>
             </dl>
-            <a class="catalog__book" href="#">Забронировать</a>
+            <a class="link catalog__book focus" href="#">Забронировать</a>
           </div>
           <picture>
             <!-- 1х: 309px; 2x: 618px -->
@@ -309,7 +313,7 @@
               <dt>Цена</dt>
               <dd>от 11700 $</dd>
             </dl>
-            <a class="catalog__book" href="#">Забронировать</a>
+            <a class="link catalog__book focus" href="#">Забронировать</a>
           </div>
           <picture>
             <!-- 1х: 309px; 2x: 618px -->
@@ -331,7 +335,7 @@
               <dt>Цена</dt>
               <dd>от 12500 $</dd>
             </dl>
-            <a class="catalog__book" href="#">Забронировать</a>
+            <a class="link catalog__book focus" href="#">Забронировать</a>
           </div>
           <picture>
             <!-- 1х: 309px; 2x: 618px -->
@@ -353,7 +357,7 @@
               <dt>Цена</dt>
               <dd>от 12300 $</dd>
             </dl>
-            <a class="catalog__book" href="#">Забронировать</a>
+            <a class="link catalog__book focus" href="#">Забронировать</a>
           </div>
           <picture>
             <!-- 1х: 309px; 2x: 618px -->
@@ -382,13 +386,13 @@
         <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
         <form>
           <label for="booking__name" class="visually-hidden">Имя</label>
-          <input type="text" id="booking__name" placeholder="Имя">
+          <input class="focus" type="text" id="booking__name" placeholder="Имя" required="">
           <label for="booking__phone" class="visually-hidden">Телефон</label>
-          <input type="tel" id="booking__phone" placeholder="Телефон">
+          <input class="focus" type="tel" id="booking__phone" placeholder="Телефон" required="">
           <label for="booking__email" class="visually-hidden">Почта</label>
-          <input type="email" id="booking__email" placeholder="email">
-          <label class="booking__checkbox-label"><input type="checkbox"><span class="booking__checkbox"></span><span>Я согласен на обработку моих персональных данных</span></label>
-          <button type="submit">Оставить заявку</button>
+          <input class="focus" type="email" id="booking__email" placeholder="email" required="">
+          <label class="booking__checkbox-label"><input type="checkbox" required=""><span class="focus booking__checkbox"></span><span>Я согласен на обработку моих персональных данных</span></label>
+          <button class="focus link" type="submit">Оставить заявку</button>
         </form>
       </div>
       <form></form>
@@ -416,7 +420,7 @@
             </svg>
             <span class="visually-hidden">Телефон</span>
           </dt>
-          <dd><a href="tel:+88002000000">8-800-200-00-00</a></dd>
+          <dd><a class="link" href="tel:+88002000000">8-800-200-00-00</a></dd>
         </dl>
       </div>
       <div class="contacts__map-container">
@@ -470,10 +474,12 @@
         <img src="img/svg/sprite.svg" height="0" width="0" alt="Лого Круизы">
         <span class="visually-hidden">Лого Круизы</span></a>
       <ul class="footer__links">
-        <li class="footer__link"><a href="#">Преимущества</a></li>
-        <li class="footer__link"><a href="#">Направления</a></li>
-        <li class="footer__link"><a href="#">Ближайшие круизы</a></li>
-        <li class="footer__link"><a href="#">Контакты</a></li>
+        <li class="footer__link"><a class="link" href="#">Преимущества</a></li>
+        <li class="footer__link"><a class="link" href="#">Направления</a></li>
+        <li class="footer__link">
+          <a class="link" href="#">Ближайшие круизы</a>
+        </li>
+        <li class="footer__link"><a class="link" href="#">Контакты</a></li>
       </ul>
       <ul class="footer__social-links">
         <li class="footer__social-link footer__social-link--fb" title="Facebook">
