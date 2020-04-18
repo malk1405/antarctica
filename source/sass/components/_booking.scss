@@ -77,7 +77,10 @@
 }
 
 .booking__checkbox-label input {
-  display: none;
+  height: 18px;
+  position: absolute;
+  width: auto;
+  opacity: 0;
 }
 
 .booking__checkbox {
@@ -87,6 +90,10 @@
   min-width: 18px;
   position: relative;
   width: 18px;
+}
+
+.booking__checkbox-label input:focus + .booking__checkbox {
+  background-color: $focus-bg;
 }
 
 .booking__checkbox-label input:checked + .booking__checkbox {

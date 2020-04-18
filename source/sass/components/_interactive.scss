@@ -1,0 +1,13 @@
+.link {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.focus:focus {
+  background-color: $focus-bg;
+}
