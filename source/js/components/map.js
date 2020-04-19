@@ -3,8 +3,8 @@ function activateMap() {
 
   if (!mapContainer) return;
 
-  const map = mapContainer.querySelector('#yandex-map');
-  if (!map) return;
+  const yandexMap = mapContainer.querySelector('#yandex-map');
+  if (!yandexMap) return;
 
   mapContainer.classList.remove('contacts__map-container--no-js');
   const button = mapContainer.querySelector('.contacts__map-button');
@@ -54,9 +54,8 @@ function activateMap() {
       const myPlacemark = new window.ymaps.Placemark(
         position,
         {
-          hintContent: 'Круизы в Антарктику',
-          balloonContent:
-            'Только у нас вы можете приобрести круиз в Антарктику по самым дешевым ценам',
+          hintContent: yandexMap.dataset.hint,
+          balloonContent: yandexMap.dataset.balloon,
         },
         {
           iconLayout: 'default#image',
