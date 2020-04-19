@@ -386,12 +386,12 @@
         <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
         <form>
           <label for="booking__name" class="visually-hidden">Имя</label>
-          <input class="focus" type="text" id="booking__name" placeholder="Имя" required="">
+          <input class="focus booking__input" type="text" id="booking__name" placeholder="Имя" required="">
           <label for="booking__phone" class="visually-hidden">Телефон</label>
-          <input class="focus" type="tel" id="booking__phone" placeholder="Телефон" required="">
+          <input class="focus booking__input" type="tel" id="booking__phone" placeholder="Телефон" required="">
           <label for="booking__email" class="visually-hidden">Почта</label>
-          <input class="focus" type="email" id="booking__email" placeholder="email" required="">
-          <label class="booking__checkbox-label"><input type="checkbox" required=""><span class="focus booking__checkbox"></span><span>Я согласен на обработку моих персональных данных</span></label>
+          <input class="focus booking__input" type="email" id="booking__email" placeholder="email" required="">
+          <label class="booking__checkbox-label"><input type="checkbox" class="booking__checkbox booking__checkbox--real" required=""><span class="focus booking__checkbox booking__checkbox--decoy"></span><span>Я согласен на обработку моих персональных данных</span></label>
           <button class="focus link" type="submit">Оставить заявку</button>
         </form>
       </div>

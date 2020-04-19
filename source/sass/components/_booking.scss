@@ -50,7 +50,7 @@
   margin-bottom: 27px;
 }
 
-.booking__form input,
+.booking__input,
 .booking__form button {
   background-color: $light;
   border: none;
@@ -61,9 +61,10 @@
   width: 100%;
 }
 
-.booking__form input {
+.booking__input {
   margin-bottom: 20px;
 }
+
 .booking__form button {
   font-weight: 600;
 }
@@ -76,27 +77,32 @@
   margin-bottom: 30px;
 }
 
-.booking__checkbox-label input {
-  height: 18px;
-  position: absolute;
-  width: auto;
-  opacity: 0;
-}
-
 .booking__checkbox {
-  background-color: $light;
   height: 18px;
-  margin-right: 5px;
+  margin: 0;
   min-width: 18px;
-  position: relative;
   width: 18px;
+
+  &--real {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &--decoy {
+    background-color: $light;
+    height: 18px;
+    margin-right: 5px;
+    position: relative;
+    width: 18px;
+  }
 }
 
-.booking__checkbox-label input:focus + .booking__checkbox {
+.booking__checkbox-label:hover .booking__checkbox--decoy,
+.booking__checkbox--real:focus + .booking__checkbox--decoy {
   background-color: $focus-bg;
 }
 
-.booking__checkbox-label input:checked + .booking__checkbox {
+.booking__checkbox--real:checked + .booking__checkbox--decoy {
   &::after {
     border-bottom: 1px $dark solid;
     border-left: 1px $dark solid;
