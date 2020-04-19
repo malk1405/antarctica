@@ -362,6 +362,8 @@ template {
 .link {
   color: inherit;
   text-decoration: none; }
+  .link:hover {
+    cursor: pointer; }
   .link:hover, .link:focus {
     text-decoration: underline; }
 
@@ -1252,13 +1254,13 @@ template {
   margin-bottom: 120px; }
 
 .contacts__info,
-.contacts--no-js .contacts__map-container {
+.contacts__map-container {
   -ms-flex-preferred-size: 500px;
       flex-basis: 500px;
   max-width: 500px;
   min-width: auto; }
 
-.contacts__map-container {
+.contacts__map-container--interactive {
   width: 48%;
   min-width: 48%; }
 
@@ -1293,33 +1295,45 @@ template {
       -ms-flex-order: -1;
           order: -1; }
 
-.contacts__map-image {
-  display: none; }
-
-.contacts__map-container {
-  height: 306px; }
-
-.contacts--no-js .contacts__map-container {
-  min-height: 0;
-  height: auto; }
-
-.contacts--no-js .contacts__map-image,
-.contacts picture,
-.contacts img {
-  display: block; }
-
 .contacts__map-image,
 .contacts picture,
 .contacts img {
   max-width: 100%;
   width: 100%; }
 
-.contacts--no-js .contacts__map {
+.contacts__map-image,
+.contacts__map {
+  background-color: #dbd7bc; }
+
+.contacts__map-image {
+  min-height: 50px;
+  position: relative; }
+
+.contacts picture,
+.contacts img {
+  display: block; }
+
+.contacts__map-button {
+  border: 1px solid #011c40;
+  bottom: 0;
+  font-size: 10px;
+  left: 0;
+  line-height: 1.5;
+  position: absolute; }
+
+.contacts__map-container--no-js .contacts__map-button {
   display: none; }
 
 .contacts__map {
-  height: 100%;
+  display: none;
+  height: 306px;
   width: 100%; }
+
+.contacts__map-container--interactive .contacts__map {
+  display: block; }
+
+.contacts__map-container--interactive .contacts__map-image {
+  display: none; }
 
 @media screen and (max-width: 1023px) {
   .contacts {
@@ -1327,8 +1341,9 @@ template {
   .contacts dl {
     margin-top: 29px; }
   .contacts__map-container {
-    height: 335px;
-    margin-right: 30px; } }
+    margin-right: 30px; }
+  .contacts__map {
+    height: 335px; } }
 
 @media screen and (max-width: 767px) {
   .contacts {
@@ -1338,10 +1353,11 @@ template {
   .contacts__info {
     margin: 0 auto; }
   .contacts__map-container {
-    height: 316px;
     margin: 35px auto 0;
     max-width: 500px;
     width: 100%; }
   .contacts__map-image {
     margin: auto;
-    max-width: 290px; } }
+    max-width: 290px; }
+  .contacts__map {
+    height: 316px; } }
