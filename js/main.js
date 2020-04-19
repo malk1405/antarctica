@@ -1680,8 +1680,8 @@ __webpack_require__.r(__webpack_exports__);
 function activateMap() {
   var mapContainer = document.querySelector('.contacts__map-container');
   if (!mapContainer) return;
-  var map = mapContainer.querySelector('#yandex-map');
-  if (!map) return;
+  var yandexMap = mapContainer.querySelector('#yandex-map');
+  if (!yandexMap) return;
   mapContainer.classList.remove('contacts__map-container--no-js');
   var button = mapContainer.querySelector('.contacts__map-button');
   if (!button) return;
@@ -1717,8 +1717,8 @@ function activateMap() {
         zoom: 16
       });
       var myPlacemark = new window.ymaps.Placemark(position, {
-        hintContent: 'Круизы в Антарктику',
-        balloonContent: 'Только у нас вы можете приобрести круиз в Антарктику по самым дешевым ценам'
+        hintContent: yandexMap.dataset.hint,
+        balloonContent: yandexMap.dataset.balloon
       }, {
         iconLayout: 'default#image',
         iconImageHref: 'img/svg/location.svg',
