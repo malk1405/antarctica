@@ -41,8 +41,6 @@ function activateMap() {
     if (!window.ymaps) return;
 
     function init() {
-      console.log('init');
-
       mapContainer.classList.add('contacts__map-container--interactive');
 
       const position = [59.938635, 30.323118];
