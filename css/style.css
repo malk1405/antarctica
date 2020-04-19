@@ -1313,6 +1313,7 @@ template {
   display: block; }
 
 .contacts__map-button {
+  background-color: #f9fbfd;
   border: 1px solid #011c40;
   bottom: 0;
   font-size: 10px;
