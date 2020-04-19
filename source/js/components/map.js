@@ -3,6 +3,9 @@ function activateMap() {
 
   if (!mapContainer) return;
 
+  const map = mapContainer.querySelector('#yandex-map');
+  if (!map) return;
+
   mapContainer.classList.remove('contacts__map-container--no-js');
   const button = mapContainer.querySelector('.contacts__map-button');
 
@@ -25,9 +28,6 @@ function activateMap() {
   }
 
   function activateYandex() {
-    const map = mapContainer.querySelector('#map');
-    if (!map) return;
-
     let count = 0;
 
     const timer = setInterval(() => {
@@ -41,10 +41,15 @@ function activateMap() {
     if (!window.ymaps) return;
 
     function init() {
+      console.log('init');
+
       mapContainer.classList.add('contacts__map-container--interactive');
 
       const position = [59.938635, 30.323118];
-      const map = new window.ymaps.Map('map', { center: position, zoom: 16 });
+      const map = new window.ymaps.Map('yandex-map', {
+        center: position,
+        zoom: 16,
+      });
 
       const myPlacemark = new window.ymaps.Placemark(
         position,
