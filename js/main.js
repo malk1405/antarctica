@@ -1709,7 +1709,6 @@ function activateMap() {
     if (!window.ymaps) return;
 
     function init() {
-      console.log('init');
       mapContainer.classList.add('contacts__map-container--interactive');
       var position = [59.938635, 30.323118];
       var map = new window.ymaps.Map('yandex-map', {
