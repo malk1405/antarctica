@@ -588,7 +588,7 @@
     </section>
     <!-- Бронирование. Конец -->
 
-    <section class="section container contacts contacts--no-js">
+    <section class="section container contacts">
       <div class="contacts__info">
         <h2 class="visually-hidden">Контакты</h2>
         <p>
@@ -612,7 +612,7 @@
           <dd><a class="link" href="tel:+88002000000">8-800-200-00-00</a></dd>
         </dl>
       </div>
-      <div class="contacts__map-container">
+      <div class="contacts__map-container contacts__map-container--no-js">
         <div class="contacts__map-image">
           <picture>
             <!-- 1х: 290px; 2x: 580px -->
@@ -664,6 +664,12 @@
               alt="Карта"
             />
           </picture>
+          <button
+            class="contacts__map-button link focus"
+            title="Загрузить Яндекс.Карты"
+          >
+            Загрузить Яндекс.Карты
+          </button>
         </div>
         <div class="contacts__map" id="map"></div>
       </div>
@@ -752,10 +758,10 @@
 
     <script async src="js/main.js"></script>
     <script async src="js/vendor.js"></script>
-    <script
+    <!-- <script
       defer
       src="https://api-maps.yandex.ru/2.1/?apikey=31ed6d40-6f66-49bb-8924-f9f7c195d51e&lang=ru_RU"
     ></script>
-    <script defer src="js/map.js"></script>
+    <script defer src="js/yandex-maps.js"></script> -->
   </body>
 </html>

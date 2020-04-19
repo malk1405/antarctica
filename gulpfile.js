@@ -50,7 +50,7 @@ gulp.task('server', function () {
 });
 
 gulp.task('js', () => {
-  const entry = ['main', 'vendor', 'map'].reduce((acc, el) => {
+  const entry = ['main', 'vendor'].reduce((acc, el) => {
     acc[el] = `./source/js/${el}.js`;
     return acc;
   }, {});

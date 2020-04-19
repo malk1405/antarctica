@@ -7,13 +7,13 @@
 }
 
 .contacts__info,
-.contacts--no-js .contacts__map-container {
+.contacts__map-container {
   flex-basis: 500px;
   max-width: 500px;
   min-width: auto;
 }
 
-.contacts__map-container {
+.contacts__map-container--interactive {
   width: 48%;
   min-width: 48%;
 }
@@ -51,25 +51,6 @@
   order: -1;
 }
 
-.contacts__map-image {
-  display: none;
-}
-
-.contacts__map-container {
-  height: 306px;
-}
-
-.contacts--no-js .contacts__map-container {
-  min-height: 0;
-  height: auto;
-}
-
-.contacts--no-js .contacts__map-image,
-.contacts picture,
-.contacts img {
-  display: block;
-}
-
 .contacts__map-image,
 .contacts picture,
 .contacts img {
@@ -77,13 +58,46 @@
   width: 100%;
 }
 
-.contacts--no-js .contacts__map {
+.contacts__map-image,
+.contacts__map {
+  background-color: #dbd7bc;
+}
+
+.contacts__map-image {
+  min-height: 50px;
+  position: relative;
+}
+
+.contacts picture,
+.contacts img {
+  display: block;
+}
+
+.contacts__map-button {
+  border: 1px solid $dark;
+  bottom: 0;
+  font-size: 10px;
+  left: 0;
+  line-height: 1.5;
+  position: absolute;
+}
+
+.contacts__map-container--no-js .contacts__map-button {
   display: none;
 }
 
 .contacts__map {
-  height: 100%;
+  display: none;
+  height: 306px;
   width: 100%;
+}
+
+.contacts__map-container--interactive .contacts__map {
+  display: block;
+}
+
+.contacts__map-container--interactive .contacts__map-image {
+  display: none;
 }
 
 @include mq(tablet) {
@@ -96,8 +110,11 @@
   }
 
   .contacts__map-container {
-    height: 335px;
     margin-right: 30px;
+  }
+
+  .contacts__map {
+    height: 335px;
   }
 }
 
@@ -113,7 +130,6 @@
   }
 
   .contacts__map-container {
-    height: 316px;
     margin: 35px auto 0;
     max-width: 500px;
     width: 100%;
@@ -122,5 +138,9 @@
   .contacts__map-image {
     margin: auto;
     max-width: 290px;
+  }
+
+  .contacts__map {
+    height: 316px;
   }
 }

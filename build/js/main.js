@@ -1668,6 +1668,71 @@ function deactivateLinks() {
 
 /***/ }),
 
+/***/ "./source/js/components/map.js":
+/*!*************************************!*\
+  !*** ./source/js/components/map.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function activateMap() {
+  var mapContainer = document.querySelector('.contacts__map-container');
+  if (!mapContainer) return;
+  mapContainer.classList.remove('contacts__map-container--no-js');
+  var button = mapContainer.querySelector('.contacts__map-button');
+  if (!button) return;
+  var yandexMaps;
+  button.addEventListener('click', function () {
+    addYandex();
+    activateYandex();
+  });
+
+  function addYandex() {
+    if (yandexMaps) return;
+    var body = document.querySelector('body');
+    yandexMaps = document.createElement('script');
+    yandexMaps.src = 'https://api-maps.yandex.ru/2.1/?apikey=31ed6d40-6f66-49bb-8924-f9f7c195d51e&lang=ru_RU';
+    body.appendChild(yandexMaps);
+  }
+
+  function activateYandex() {
+    var map = mapContainer.querySelector('#map');
+    if (!map) return;
+    var count = 0;
+    var timer = setInterval(function () {
+      count++;
+      if (count > 10 || window.ymaps) clearInterval(timer);
+      if (window.ymaps) window.ymaps.ready(init);
+    }, 100);
+    if (!window.ymaps) return;
+
+    function init() {
+      mapContainer.classList.add('contacts__map-container--interactive');
+      var position = [59.938635, 30.323118];
+      var map = new window.ymaps.Map('map', {
+        center: position,
+        zoom: 16
+      });
+      var myPlacemark = new window.ymaps.Placemark(position, {
+        hintContent: 'Круизы в Антарктику',
+        balloonContent: 'Только у нас вы можете приобрести круиз в Антарктику по самым дешевым ценам'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/svg/location.svg',
+        iconImageSize: [18, 22],
+        iconImageOffset: [-9, -22]
+      });
+      map.geoObjects.add(myPlacemark);
+    }
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (activateMap);
+
+/***/ }),
+
 /***/ "./source/js/main.js":
 /*!***************************!*\
   !*** ./source/js/main.js ***!
@@ -1680,6 +1745,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ "./source/js/components/header.js");
 /* harmony import */ var _components_links__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/links */ "./source/js/components/links.js");
 /* harmony import */ var _components_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/form */ "./source/js/components/form.js");
+/* harmony import */ var _components_map__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/map */ "./source/js/components/map.js");
+
 
 
 
@@ -1688,6 +1755,7 @@ __webpack_require__.r(__webpack_exports__);
   Object(_components_links__WEBPACK_IMPORTED_MODULE_1__["default"])();
   Object(_components_header__WEBPACK_IMPORTED_MODULE_0__["default"])();
   Object(_components_form__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  Object(_components_map__WEBPACK_IMPORTED_MODULE_3__["default"])();
 })();
 
 /***/ })
