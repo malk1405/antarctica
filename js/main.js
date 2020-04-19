@@ -1680,6 +1680,8 @@ __webpack_require__.r(__webpack_exports__);
 function activateMap() {
   var mapContainer = document.querySelector('.contacts__map-container');
   if (!mapContainer) return;
+  var map = mapContainer.querySelector('#yandex-map');
+  if (!map) return;
   mapContainer.classList.remove('contacts__map-container--no-js');
   var button = mapContainer.querySelector('.contacts__map-button');
   if (!button) return;
@@ -1698,8 +1700,6 @@ function activateMap() {
   }
 
   function activateYandex() {
-    var map = mapContainer.querySelector('#map');
-    if (!map) return;
     var count = 0;
     var timer = setInterval(function () {
       count++;
@@ -1709,9 +1709,10 @@ function activateMap() {
     if (!window.ymaps) return;
 
     function init() {
+      console.log('init');
       mapContainer.classList.add('contacts__map-container--interactive');
       var position = [59.938635, 30.323118];
-      var map = new window.ymaps.Map('map', {
+      var map = new window.ymaps.Map('yandex-map', {
         center: position,
         zoom: 16
       });
