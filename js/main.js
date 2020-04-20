@@ -1584,20 +1584,28 @@ module.exports = g;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 var activateForm = function activateForm() {
-  var form = document.querySelector('.booking__form form');
-  if (!form) return;
-  var phoneText = '';
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
-    window.alert('Данные отправлены');
+  var form = document.querySelector(".booking__form form");
+
+  if (!form) {
+    return;
+  }
+
+  var phoneText = "";
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // window.alert(`Данные отправлены`);
+
     form.reset();
-    phoneText = '';
+    phoneText = "";
   });
 
   (function validatePhone() {
-    var phoneField = form.querySelector('#booking__phone');
-    if (!phoneField) return;
-    phoneField.addEventListener('input', function (event) {
+    var phoneField = form.querySelector("#booking__phone");
+
+    if (!phoneField) {
+      return;
+    }
+
+    phoneField.addEventListener("input", function (event) {
       var value = event.target.value;
       phoneText = /^[0-9]*$/.test(value) ? value : phoneText;
       phoneField.value = phoneText;
@@ -1626,14 +1634,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function activateHeader() {
-  var header = document.querySelector('.header');
-  if (!header) return;
-  header.classList.remove('header--no-js');
-  header.classList.remove('header--menu-visible');
-  var buttons = header.querySelectorAll('.header__button');
+  var header = document.querySelector(".header");
+
+  if (!header) {
+    return;
+  }
+
+  header.classList.remove("header--no-js");
+  header.classList.remove("header--menu-visible");
+  var buttons = header.querySelectorAll(".header__button");
   buttons.forEach(function (button) {
-    button.addEventListener('click', function () {
-      header.classList.toggle('header--menu-visible');
+    button.addEventListener("click", function () {
+      header.classList.toggle("header--menu-visible");
     });
   });
 }
@@ -1661,8 +1673,8 @@ function deactivateLinks() {
     e.preventDefault();
   }
 
-  document.querySelectorAll('a[href="#"]').forEach(function (link) {
-    link.addEventListener('click', noop);
+  document.querySelectorAll("a[href=\"#\"]").forEach(function (link) {
+    link.addEventListener("click", noop);
   });
 }
 
@@ -1678,24 +1690,39 @@ function deactivateLinks() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 function activateMap() {
-  var mapContainer = document.querySelector('.contacts__map-container');
-  if (!mapContainer) return;
-  var yandexMap = mapContainer.querySelector('#yandex-map');
-  if (!yandexMap) return;
-  mapContainer.classList.remove('contacts__map-container--no-js');
-  var button = mapContainer.querySelector('.contacts__map-button');
-  if (!button) return;
+  var mapContainer = document.querySelector(".contacts__map-container");
+
+  if (!mapContainer) {
+    return;
+  }
+
+  var yandexMap = mapContainer.querySelector("#yandex-map");
+
+  if (!yandexMap) {
+    return;
+  }
+
+  mapContainer.classList.remove("contacts__map-container--no-js");
+  var button = mapContainer.querySelector(".contacts__map-button");
+
+  if (!button) {
+    return;
+  }
+
   var yandexMaps;
-  button.addEventListener('click', function () {
+  button.addEventListener("click", function () {
     addYandex();
     activateYandex();
   });
 
   function addYandex() {
-    if (yandexMaps) return;
-    var body = document.querySelector('body');
-    yandexMaps = document.createElement('script');
-    yandexMaps.src = 'https://api-maps.yandex.ru/2.1/?apikey=31ed6d40-6f66-49bb-8924-f9f7c195d51e&lang=ru_RU';
+    if (yandexMaps) {
+      return;
+    }
+
+    var body = document.querySelector("body");
+    yandexMaps = document.createElement("script");
+    yandexMaps.src = "https://api-maps.yandex.ru/2.1/?apikey=31ed6d40-6f66-49bb-8924-f9f7c195d51e&lang=ru_RU";
     body.appendChild(yandexMaps);
   }
 
@@ -1703,15 +1730,24 @@ function activateMap() {
     var count = 0;
     var timer = setInterval(function () {
       count++;
-      if (count > 10 || window.ymaps) clearInterval(timer);
-      if (window.ymaps) window.ymaps.ready(init);
+
+      if (count > 10 || window.ymaps) {
+        clearInterval(timer);
+      }
+
+      if (window.ymaps) {
+        window.ymaps.ready(init);
+      }
     }, 100);
-    if (!window.ymaps) return;
+
+    if (!window.ymaps) {
+      return;
+    }
 
     function init() {
-      mapContainer.classList.add('contacts__map-container--interactive');
+      mapContainer.classList.add("contacts__map-container--interactive");
       var position = [59.938635, 30.323118];
-      var map = new window.ymaps.Map('yandex-map', {
+      var map = new window.ymaps.Map("yandex-map", {
         center: position,
         zoom: 16
       });
@@ -1719,8 +1755,8 @@ function activateMap() {
         hintContent: yandexMap.dataset.hint,
         balloonContent: yandexMap.dataset.balloon
       }, {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/svg/location.svg',
+        iconLayout: "default#image",
+        iconImageHref: "img/svg/location.svg",
         iconImageSize: [18, 22],
         iconImageOffset: [-9, -22]
       });
