@@ -3,7 +3,7 @@ export default function deactivateLinks() {
     e.preventDefault();
   }
 
-  document.querySelectorAll('a[href="#"]').forEach((link) => {
-    link.addEventListener('click', noop);
+  document.querySelectorAll(`a[href="#"]`).forEach((link) => {
+    link.addEventListener(`click`, noop);
   });
 }
