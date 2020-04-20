@@ -63,17 +63,17 @@ function activateMap() {
       });
 
       const myPlacemark = new window.ymaps.Placemark(
-        position,
-        {
-          hintContent: yandexMap.dataset.hint,
-          balloonContent: yandexMap.dataset.balloon,
-        },
-        {
-          iconLayout: `default#image`,
-          iconImageHref: `img/svg/location.svg`,
-          iconImageSize: [18, 22],
-          iconImageOffset: [-9, -22],
-        }
+          position,
+          {
+            hintContent: yandexMap.dataset.hint,
+            balloonContent: yandexMap.dataset.balloon,
+          },
+          {
+            iconLayout: `default#image`,
+            iconImageHref: `img/svg/location.svg`,
+            iconImageSize: [18, 22],
+            iconImageOffset: [-9, -22],
+          }
       );
 
       map.geoObjects.add(myPlacemark);
