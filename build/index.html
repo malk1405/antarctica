@@ -69,7 +69,12 @@
       </div>
       <div class="cruises__image-container picture-container">
         <picture>
-          <!-- 1х: 768px; 2x: 1536px -->
+          <!-- 1х: 699px; 2x: 1398px -->
+          <source type="image/webp" media="(max-width: 767px)" srcset="
+              img/cruises/main@1x--sm.webp,
+              img/cruises/main@2x--sm.webp 2x
+            ">
+          <!-- 1х: 850px; 2x: 1700px -->
           <source type="image/webp" media="(max-width: 1023px)" srcset="
               img/cruises/main@1x--md.webp,
               img/cruises/main@2x--md.webp 2x
@@ -79,7 +84,9 @@
               img/cruises/main@1x--lg.webp,
               img/cruises/main@2x--lg.webp 2x
             ">
-          <!-- 1х: 768px; 2x: 1536px -->
+          <!-- 1х: 699px; 2x: 1398px -->
+          <source media="(max-width: 767px)" srcset="img/cruises/main@1x--sm.jpg, img/cruises/main@2x--sm.jpg 2x">
+          <!-- 1х: 850px; 2x: 1700px -->
           <source media="(max-width: 1023px)" srcset="img/cruises/main@1x--md.jpg, img/cruises/main@2x--md.jpg 2x">
           <!-- 1х: 1366px; 2x: 2732px -->
           <img width="1366" height="650" src="img/cruises/main@1x--lg.jpg" srcset="img/cruises/main@2x--lg.jpg 2x" alt="Круиз в Антарктику">

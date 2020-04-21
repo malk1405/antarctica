@@ -86,9 +86,10 @@
   min-width: 100%;
   position: absolute;
   transform: translate(-50%, -$top);
+  width: auto;
 
   @include mq(tablet) {
-    $top: 40%;
+    $top: 0;
     top: $top;
     transform: translate(-50%, -$top);
   }
