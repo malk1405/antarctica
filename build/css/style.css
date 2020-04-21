@@ -965,14 +965,13 @@ template {
   min-height: 386px;
   min-width: 260px;
   overflow: hidden;
-  padding: 32px 25px;
+  padding: 32px 25px 27px;
   position: relative;
   width: 20%; }
   .catalog__card:hover {
     background-color: #011c40; }
   .catalog__card:focus-within {
-    background-color: #011c40;
-    padding: 32px 25px; }
+    background-color: #011c40; }
   .catalog__card::after {
     background-color: #195288;
     content: "";
@@ -985,7 +984,7 @@ template {
     z-index: -5; }
 
 .catalog__card h3 {
-  margin: 5px 5px -5px;
+  margin: 0 5px;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2; }
@@ -1013,6 +1012,7 @@ template {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  margin-bottom: 8px;
   opacity: 0; }
 
 .catalog__card:hover .catalog__info {
@@ -1044,7 +1044,6 @@ template {
   font-weight: 600;
   display: block;
   line-height: 40px;
-  margin-bottom: 3px;
   margin-top: auto;
   text-align: center;
   text-decoration: none; }
@@ -1070,25 +1069,25 @@ template {
 
 @media screen and (max-width: 1023px) {
   .catalog__card {
-    padding: 25px 35px 30px;
+    padding: 32px 35px 32px;
     width: 100%; }
-  .catalog__card:hover {
-    padding: 32px 35px 30px; }
   .catalog__card h3 {
     margin: 0; }
-  .catalog__book {
-    margin-bottom: 5px; } }
+  .catalog__info {
+    margin-bottom: 3px; } }
 
 @media screen and (max-width: 767px) {
   .catalog__cards {
     margin-left: -5px;
     margin-right: -5px; }
   .catalog__card {
-    padding: 20px 25px; }
-  .catalog__card:hover {
-    padding: 35px 25px 30px; }
+    padding: 32px 25px 22px; }
+  .catalog__info {
+    margin-bottom: 13px; }
   .catalog__info dl {
-    margin-top: 18px; } }
+    margin-top: 18px; }
+  .catalog__info dt {
+    margin-bottom: 1px; } }
 
 .booking {
   background-color: #e3ecf6;
