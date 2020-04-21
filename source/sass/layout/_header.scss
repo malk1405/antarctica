@@ -93,7 +93,6 @@
 
   .header__nav {
     display: none;
-    font-size: 18px;
     margin-top: 24px;
     min-width: 100%;
     order: 2;
@@ -105,6 +104,10 @@
   .header--menu-visible .header__nav,
   .header--menu-visible .header__button--close {
     display: block;
+  }
+
+  .header__links {
+    font-size: 18px;
   }
 
   .header__link {

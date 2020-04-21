@@ -564,7 +564,6 @@ template {
       color: #011c40; }
   .header__nav {
     display: none;
-    font-size: 18px;
     margin-top: 24px;
     min-width: 100%;
     -webkit-box-ordinal-group: 3;
@@ -576,6 +575,8 @@ template {
   .header--menu-visible .header__nav,
   .header--menu-visible .header__button--close {
     display: block; }
+  .header__links {
+    font-size: 18px; }
   .header__link {
     margin: 0;
     margin-top: 23px; }
