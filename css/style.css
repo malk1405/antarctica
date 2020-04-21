@@ -756,13 +756,14 @@ template {
   min-width: 100%;
   position: absolute;
   -webkit-transform: translate(-50%, -75%);
-          transform: translate(-50%, -75%); }
+          transform: translate(-50%, -75%);
+  width: auto; }
   @media screen and (max-width: 1023px) {
     .cruises__image-container source,
     .cruises__image-container img {
-      top: 40%;
-      -webkit-transform: translate(-50%, -40%);
-              transform: translate(-50%, -40%); } }
+      top: 0;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); } }
 
 .trip {
   -webkit-box-align: center;
