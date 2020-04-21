@@ -1063,6 +1063,9 @@ template {
     margin-top: 25px; } }
 
 @media screen and (max-width: 767px) {
+  .catalog__cards {
+    margin-left: -5px;
+    margin-right: -5px; }
   .catalog__card {
     padding-bottom: 20px; }
   .catalog__card:hover {
