@@ -10,7 +10,7 @@
   min-height: 386px;
   min-width: 260px;
   overflow: hidden;
-  padding: 32px 25px 27px;
+  padding: 32px 25px 35px;
   position: relative;
   width: 20%;
 
@@ -37,26 +37,41 @@
 }
 
 .catalog__card h3 {
-  margin: 0 5px;
-  order: 2;
+  margin: 0;
+  color: transparent;
+
+  &::after {
+    bottom: 26px;
+    content: attr(data-text);
+    color: $light;
+    display: block;
+    left: 0;
+    padding: 0 30px;
+    position: absolute;
+  }
 }
 
 .catalog__card:hover h3 {
-  margin: 0;
-  order: 0;
+  color: $light;
+
+  &::after {
+    display: none;
+  }
 }
 
 .catalog__card:focus-within h3 {
   // дублирование из-за IE
-  margin: 0;
-  order: 0;
+  color: $light;
+
+  &::after {
+    display: none;
+  }
 }
 
 .catalog__info {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  margin-bottom: 8px;
   opacity: 0;
 }
 
@@ -122,16 +137,13 @@
 
 @include mq(tablet) {
   .catalog__card {
-    padding: 32px 35px 32px;
+    padding: 32px 35px 35px;
     width: 100%;
   }
 
-  .catalog__card h3 {
-    margin: 0;
-  }
-
-  .catalog__info {
-    margin-bottom: 3px;
+  .catalog__card h3::after {
+    bottom: 31px;
+    padding: 0 35px;
   }
 }
 
@@ -142,11 +154,12 @@
   }
 
   .catalog__card {
-    padding: 32px 25px 22px;
+    padding: 32px 25px 35px;
   }
 
-  .catalog__info {
-    margin-bottom: 13px;
+  .catalog__card h3::after {
+    bottom: 20px;
+    padding: 0 25px;
   }
 
   .catalog__info dl {
