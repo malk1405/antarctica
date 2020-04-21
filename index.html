@@ -405,19 +405,24 @@
         </p>
         <dl>
           <dt>
-            <svg focusable="false" width="18" height="22">
-              <use xlink:href="img/svg/sprite.svg#location"></use>
-            </svg>
             <span class="visually-hidden">Адрес</span>
           </dt>
-          <dd>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</dd>
-          <dt>
-            <svg focusable="false" width="18" height="18">
-              <use xlink:href="img/svg/sprite.svg#phone"></use>
+          <dd class="contacts__value">
+            <svg class="contacts__icon contacts__icon--location" focusable="false" width="18" height="22">
+              <use xlink:href="img/svg/sprite.svg#location"></use>
             </svg>
+            г. Санкт Петербург, ул. Большая Конюшенная, 19/8
+          </dd>
+          <dt>
             <span class="visually-hidden">Телефон</span>
           </dt>
-          <dd><a class="link" href="tel:+88002000000">8-800-200-00-00</a></dd>
+          <dd>
+            <a class="link contacts__value" href="tel:+88002000000">
+              <svg class="contacts__icon contacts__icon--phone" focusable="false" width="18" height="18">
+                <use xlink:href="img/svg/sprite.svg#phone"></use>
+              </svg>
+              8-800-200-00-00</a>
+          </dd>
         </dl>
       </div>
       <div class="contacts__map-container contacts__map-container--no-js">
