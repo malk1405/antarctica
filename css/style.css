@@ -345,7 +345,7 @@ template {
   display: block;
   height: 38px;
   width: 70px; }
-  .logo:hover {
+  .logo:not(.active-link):hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
     -webkit-transform-origin: bottom left;
@@ -362,9 +362,9 @@ template {
 .link {
   color: inherit;
   text-decoration: none; }
-  .link:hover {
+  .link:not(.active-link):hover {
     cursor: pointer; }
-  .link:hover, .link:focus {
+  .link:not(.active-link):hover, .link:not(.active-link):focus {
     text-decoration: underline; }
 
 .focus:focus,
