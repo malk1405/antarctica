@@ -385,7 +385,7 @@
           <label for="booking__name" class="visually-hidden">Имя</label>
           <input class="focus booking__input" type="text" id="booking__name" placeholder="Имя" required="">
           <label for="booking__phone" class="visually-hidden">Телефон</label>
-          <input class="focus booking__input" type="tel" id="booking__phone" placeholder="Телефон" required="">
+          <input class="focus booking__input" type="tel" id="booking__phone" placeholder="Телефон" pattern="(8[0-9]{10})" title="Введите номер в формате 8XXXXXXXXXX" required="">
           <label for="booking__email" class="visually-hidden">Почта</label>
           <input class="focus booking__input" type="email" id="booking__email" placeholder="email" required="">
           <label class="booking__checkbox-label"><input type="checkbox" class="booking__checkbox booking__checkbox--real" required=""><span class="focus booking__checkbox booking__checkbox--decoy"></span><span>Я согласен на обработку моих персональных данных</span></label>
