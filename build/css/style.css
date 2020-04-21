@@ -965,12 +965,11 @@ template {
   min-height: 386px;
   min-width: 260px;
   overflow: hidden;
-  padding: 25px 30px;
+  padding: 32px 25px;
   position: relative;
   width: 20%; }
   .catalog__card:hover {
-    background-color: #011c40;
-    padding: 32px 25px; }
+    background-color: #011c40; }
   .catalog__card:focus-within {
     background-color: #011c40;
     padding: 32px 25px; }
@@ -986,26 +985,41 @@ template {
     z-index: -5; }
 
 .catalog__card h3 {
-  margin: 0;
-  margin-top: auto; }
+  margin: 5px 5px -5px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2; }
 
 .catalog__card:hover h3 {
   margin: 0;
-  margin-bottom: auto; }
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0; }
 
 .catalog__card:focus-within h3 {
   margin: 0;
-  margin-bottom: auto; }
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0; }
 
 .catalog__info {
-  height: 0;
-  overflow: hidden; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  opacity: 0; }
 
 .catalog__card:hover .catalog__info {
-  height: auto; }
+  opacity: 1; }
 
 .catalog__card:focus-within .catalog__info {
-  height: auto; }
+  opacity: 1; }
 
 .catalog__info dl,
 .catalog__info dd {
@@ -1015,11 +1029,13 @@ template {
   padding: 0; }
 
 .catalog__info dl {
-  margin-top: auto; }
+  margin-top: 20px; }
 
 .catalog__info dt {
-  font-weight: 500;
-  margin-top: 14px; }
+  font-weight: 500; }
+
+.catalog__info dd {
+  margin-bottom: 14px; }
 
 .catalog__book {
   background-color: #f9fbfd;
@@ -1029,7 +1045,7 @@ template {
   display: block;
   line-height: 40px;
   margin-bottom: 3px;
-  margin-top: 25px;
+  margin-top: auto;
   text-align: center;
   text-decoration: none; }
 
@@ -1058,9 +1074,10 @@ template {
     width: 100%; }
   .catalog__card:hover {
     padding: 32px 35px 30px; }
+  .catalog__card h3 {
+    margin: 0; }
   .catalog__book {
-    margin-bottom: 5px;
-    margin-top: 25px; } }
+    margin-bottom: 5px; } }
 
 @media screen and (max-width: 767px) {
   .catalog__cards {
@@ -1069,7 +1086,9 @@ template {
   .catalog__card {
     padding: 20px 25px; }
   .catalog__card:hover {
-    padding: 35px 25px 30px; } }
+    padding: 35px 25px 30px; }
+  .catalog__info dl {
+    margin-top: 18px; } }
 
 .booking {
   background-color: #e3ecf6;
