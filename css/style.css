@@ -1207,6 +1207,7 @@ template {
 @media screen and (max-width: 1023px) {
   .booking {
     background-image: url("../img/book/book-bg@1x--md.jpg");
+    background-position: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1234,6 +1235,7 @@ template {
 @media screen and (max-width: 767px) {
   .booking {
     background-image: url("../img/book/book-bg@1x--sm.jpg");
+    background-position: right 15%;
     padding-bottom: 65px;
     padding-top: 65px; } }
   @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min-resolution: 144dpi), screen and (max-width: 767px) and (min-resolution: 1.5dppx) {
