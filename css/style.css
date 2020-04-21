@@ -968,7 +968,7 @@ template {
   min-height: 386px;
   min-width: 260px;
   overflow: hidden;
-  padding: 32px 25px 27px;
+  padding: 32px 25px 35px;
   position: relative;
   width: 20%; }
   .catalog__card:hover {
@@ -987,22 +987,26 @@ template {
     z-index: -5; }
 
 .catalog__card h3 {
-  margin: 0 5px;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2; }
+  margin: 0;
+  color: transparent; }
+  .catalog__card h3::after {
+    bottom: 26px;
+    content: attr(data-text);
+    color: #f9fbfd;
+    display: block;
+    left: 0;
+    padding: 0 30px;
+    position: absolute; }
 
 .catalog__card:hover h3 {
-  margin: 0;
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0; }
+  color: #f9fbfd; }
+  .catalog__card:hover h3::after {
+    display: none; }
 
 .catalog__card:focus-within h3 {
-  margin: 0;
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0; }
+  color: #f9fbfd; }
+  .catalog__card:focus-within h3::after {
+    display: none; }
 
 .catalog__info {
   display: -webkit-box;
@@ -1015,7 +1019,6 @@ template {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin-bottom: 8px;
   opacity: 0; }
 
 .catalog__card:hover .catalog__info {
@@ -1072,21 +1075,21 @@ template {
 
 @media screen and (max-width: 1023px) {
   .catalog__card {
-    padding: 32px 35px 32px;
+    padding: 32px 35px 35px;
     width: 100%; }
-  .catalog__card h3 {
-    margin: 0; }
-  .catalog__info {
-    margin-bottom: 3px; } }
+  .catalog__card h3::after {
+    bottom: 31px;
+    padding: 0 35px; } }
 
 @media screen and (max-width: 767px) {
   .catalog__cards {
     margin-left: -5px;
     margin-right: -5px; }
   .catalog__card {
-    padding: 32px 25px 22px; }
-  .catalog__info {
-    margin-bottom: 13px; }
+    padding: 32px 25px 35px; }
+  .catalog__card h3::after {
+    bottom: 20px;
+    padding: 0 25px; }
   .catalog__info dl {
     margin-top: 18px; }
   .catalog__info dt {
