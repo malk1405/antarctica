@@ -4,8 +4,10 @@
   position: relative;
 
   &,
-  & * {
-    background-color: rgba(209, 10, 66, 0.11) !important;
+  & *,
+  & *::after,
+  & *::before {
+    background: rgba(209, 10, 66, 0.11) !important;
   }
 
   &-bg {
@@ -36,21 +38,18 @@
       width: 100%;
       z-index: -1;
 
-      background-image: url("../img/temp/desktop-b.png");
-      height: 1239px;
-      top: 120px;
+      background-image: url("../img/temp/desktop.png") !important;
+      height: 4115px;
 
       @media (max-width: 1365px) {
-        background-image: url("../img/temp/tablet-b.png");
-        height: 1460px;
-        top: 100px;
+        background-image: url("../img/temp/tablet.png") !important;
+        height: 5062px;
       }
 
       @include mq(phone) {
         // background-image: url("../img/temp/menu.png");
-        background-image: url("../img/temp/phone.png");
+        background-image: url("../img/temp/phone.png") !important;
         height: 7369px;
-        top: 0;
       }
     }
   }
