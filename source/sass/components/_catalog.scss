@@ -127,12 +127,14 @@
 
 .catalog__card img {
   display: block;
+  height: auto;
   left: 50%;
-  min-height: 104%;
-  min-width: 104%;
+  min-height: 101%;
+  min-width: 101%;
   top: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  width: auto;
 }
 
 @include mq(tablet) {
