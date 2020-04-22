@@ -1607,7 +1607,7 @@ var activateForm = function activateForm() {
 
     phoneField.addEventListener("input", function (event) {
       var value = event.target.value;
-      phoneText = /^[0-9]*$/.test(value) ? value : phoneText;
+      phoneText = /^8[0-9]*$/.test(value) ? value.substring(0, 11) : phoneText;
       phoneField.value = phoneText;
     });
   })();
