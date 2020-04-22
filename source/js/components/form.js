@@ -4,13 +4,15 @@ const activateForm = () => {
     return;
   }
 
-  let phoneText = ``;
+  const initialPhoneText = `8`;
+
+  let phoneText = initialPhoneText;
 
   form.addEventListener(`submit`, (event) => {
     event.preventDefault();
     // window.alert(`Данные отправлены`);
     form.reset();
-    phoneText = ``;
+    phoneText = initialPhoneText;
   });
 
   (function validatePhone() {
@@ -21,9 +23,15 @@ const activateForm = () => {
 
     phoneField.addEventListener(`input`, (event) => {
       const value = event.target.value;
-      phoneText = /^8[0-9]*$/.test(value) ? value.substring(0, 11) : phoneText;
+      let cursorPosition = event.target.selectionEnd;
+      if (/^8[0-9]*$/.test(value)) {
+        phoneText = value.substring(0, 11);
+      } else {
+        cursorPosition = cursorPosition ? cursorPosition - 1 : 1;
+      }
 
       phoneField.value = phoneText;
+      phoneField.setSelectionRange(cursorPosition, cursorPosition);
     });
   })();
 };

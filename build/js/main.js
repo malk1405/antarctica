@@ -1590,12 +1590,13 @@ var activateForm = function activateForm() {
     return;
   }
 
-  var phoneText = "";
+  var initialPhoneText = "8";
+  var phoneText = initialPhoneText;
   form.addEventListener("submit", function (event) {
     event.preventDefault(); // window.alert(`Данные отправлены`);
 
     form.reset();
-    phoneText = "";
+    phoneText = initialPhoneText;
   });
 
   (function validatePhone() {
@@ -1607,8 +1608,16 @@ var activateForm = function activateForm() {
 
     phoneField.addEventListener("input", function (event) {
       var value = event.target.value;
-      phoneText = /^8[0-9]*$/.test(value) ? value.substring(0, 11) : phoneText;
+      var cursorPosition = event.target.selectionEnd;
+
+      if (/^8[0-9]*$/.test(value)) {
+        phoneText = value.substring(0, 11);
+      } else {
+        cursorPosition = cursorPosition ? cursorPosition - 1 : 1;
+      }
+
       phoneField.value = phoneText;
+      phoneField.setSelectionRange(cursorPosition, cursorPosition);
     });
   })();
 };
