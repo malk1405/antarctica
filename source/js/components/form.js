@@ -21,7 +21,8 @@ const activateForm = () => {
 
     phoneField.addEventListener(`input`, (event) => {
       const value = event.target.value;
-      phoneText = /^[0-9]*$/.test(value) ? value : phoneText;
+      phoneText = /^8[0-9]*$/.test(value) ? value.substring(0, 11) : phoneText;
+
       phoneField.value = phoneText;
     });
   })();
