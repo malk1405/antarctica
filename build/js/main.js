@@ -1590,7 +1590,7 @@ var activateForm = function activateForm() {
     return;
   }
 
-  var initialPhoneText = "8";
+  var initialPhoneText = "";
   var phoneText = initialPhoneText;
   form.addEventListener("submit", function (event) {
     event.preventDefault(); // window.alert(`Данные отправлены`);
@@ -1606,6 +1606,20 @@ var activateForm = function activateForm() {
       return;
     }
 
+    phoneField.addEventListener("focus", function () {
+      if (!phoneText) {
+        phoneText = "8";
+      }
+
+      phoneField.value = phoneText;
+    });
+    phoneField.addEventListener("blur", function () {
+      if (phoneText.length <= 1) {
+        phoneText = "";
+      }
+
+      phoneField.value = phoneText;
+    });
     phoneField.addEventListener("input", function (event) {
       var value = event.target.value;
       var cursorPosition = event.target.selectionEnd;
@@ -1613,7 +1627,11 @@ var activateForm = function activateForm() {
       if (/^8[0-9]*$/.test(value)) {
         phoneText = value.substring(0, 11);
       } else {
-        cursorPosition = cursorPosition ? cursorPosition - 1 : 1;
+        cursorPosition = cursorPosition - 1;
+      }
+
+      if (cursorPosition < 1) {
+        cursorPosition = 1;
       }
 
       phoneField.value = phoneText;
