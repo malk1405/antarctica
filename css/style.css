@@ -1065,13 +1065,15 @@ template {
 
 .catalog__card img {
   display: block;
+  height: auto;
   left: 50%;
-  min-height: 104%;
-  min-width: 104%;
+  min-height: 101%;
+  min-width: 101%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  position: absolute; }
+  position: absolute;
+  width: auto; }
 
 @media screen and (max-width: 1023px) {
   .catalog__card {
